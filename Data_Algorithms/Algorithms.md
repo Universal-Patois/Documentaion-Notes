@@ -88,6 +88,10 @@ Space complexity is the amount of memory used by an algorithm.
   }
   ```
 
+### Greedy Approach
+
+
+
 ## Searching Problems
 
 * Binary search
