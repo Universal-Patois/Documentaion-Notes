@@ -39,6 +39,26 @@ while (i < 100) {
 }
 ```
 
+## For In Loops
+
+There is a special `for...in` loop to iterate over all keys of an object.
+
+```javascript
+const obj = {
+  name: 'Ali',
+  age: 65,
+};
+
+for (let key in obj) {
+  console.log(key, obj[key]);
+}
+// name Ali
+// age 65
+```
+
+To avoid subtle errors, you should always assume the `for...in` loop visits the keys in an arbitrary order.
+Also, be aware that `for...in` includes inherited keys in its iteration.
+
 ## Switch Statements
 
 * JavaScript also has a switch-statement to conditionally execute logic.
