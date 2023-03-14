@@ -145,3 +145,32 @@ Templates are often used to create the HTML for web pages, but they can also be 
     * Models, views, controllers, etc.
 
 [back to top](#express-notes)
+
+## Setting up an Express application
+
+### Installing Express Application Generator
+
+* A tool that generates an Express application "skeleton"
+
+```npm install express-generator -g```
+
+### To create and Express app
+
+* Navigate to where you want to create it and run
+
+```express (app name)```
+
+**OR**
+
+```npx express-generator (app name)```
+
+*Then*
+
+```javascript
+  cd (app name)
+  npm install
+```
+
+### To run the app
+
+```DEBUG=helloworld:* npm start```
