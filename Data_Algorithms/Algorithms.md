@@ -3,6 +3,16 @@
 * Algorithms are a set of instructions to solve a problem.
 * Algorithmic thinking is the process of breaking down a problem into smaller problems.
 
+## Table of Contents
+
+* [Time Complexity](#time-complexity)
+* [Number of Operations](#number-of-operations)
+* [Multiple Operations](#multiple-operations)
+* [Space Complexity](#space-complexity)
+* [Making Faster Algorithms](#making-faster-algorithms)
+* [Greedy Approach](#greedy-approach)
+
+
 ## Time Complexity
 
 Time complexity is the most important thing in algorithms. It is the most important thing to consider when you are designing, choosing and comparing an algorithm. How many primitive operations are performed by an algorithm?
@@ -32,6 +42,8 @@ Time complexity is the most important thing in algorithms. It is the most import
 * **O(n^2)** (Slow) - *Quadratic Time* is the worst time complexity. It is the slowest. It compares every element to every other element. The amount of time it takes to run an algorithm grows at a rate of the square of the size of the input data set.
   * Number of operations: n^2
 
+[Back to top](#algorithms)
+
 ### Multiple expressions/loops
 
 * **O(1)**: Running a statement, value lookup on an array, object, or variable.
@@ -49,6 +61,8 @@ Space complexity is the amount of memory used by an algorithm.
  * Are you creating new data structures?
  * How often are you doing this in comparison to your input
  * *Call stack*- The call stack is taking place in memory. Something to consider with recursion.
+
+[Back to top](#algorithms)
 
 ## Making Faster Algorithms
 
@@ -87,6 +101,8 @@ Space complexity is the amount of memory used by an algorithm.
     return result;
   }
   ```
+
+[Back to top](#algorithms)
 
 ### Greedy Approach
 
@@ -128,6 +144,8 @@ Space complexity is the amount of memory used by an algorithm.
 * selects a pivot element
 * sorts the rest of the elements in to two groups based on whether they are less than or greater than the pivot element
 * the built-in sort method in JavaScript uses quick sort
+
+[Back to top](#algorithms)
 ## Searching Problems
 
 * Binary search
