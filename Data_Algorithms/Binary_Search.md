@@ -2,12 +2,14 @@
 
 ## The process of searching for a specific value in an ordered collection
 
+* Searching algorithm
 * O(log n) time complexity
 
 ## When to use
 
 * Any time you need to search for an index or element in a collection
 * If the collection is unordered it can (and should) be sorted first
+* Finding an elements position in a sorted array
 
 ## Terminology for Binary Search
 
@@ -54,5 +56,6 @@ var search = function(numbers, target) {
     return -1;
 };
 ```
+
 
 ## [More on Binary Search](https://leetcode.com/explore/learn/card/binary-search/126/template-ii/)
