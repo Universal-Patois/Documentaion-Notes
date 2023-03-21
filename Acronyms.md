@@ -36,6 +36,8 @@ Uniform Resource Identifier
 
 A Uniform Resource Identifier (URI) is a string of characters that unambiguously identifies a particular resource. URIs are used to identify resources in many different contexts, including web pages, files, and abstract or physical resources. A URI is a compact sequence of characters that identifies an abstract or physical resource. A URI can be further classified as a locator, a name, or both. The term "Uniform Resource Identifier" (URI) is often used as a synonym for a URL or a URN.
 
+###
+
 ## URL
 
 Uniform Resource Locator

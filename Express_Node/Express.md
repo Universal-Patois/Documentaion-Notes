@@ -186,18 +186,99 @@ Templates are often used to create the HTML for web pages, but they can also be 
 
 [back to top](#express-notes)
 
-## Using a database
+## Using a database(with Mongoose)
 
 ### Designing the models needed for the app
 
 * The models are the objects that will be stored in the database.
-* When designing the models it makes sense to have separate models for every object 
+* The model represents a collection of documents in the database that you can search.
+  * The model's **instances** represent individual documents that you can save and retrieve.
+* When designing the models it makes sense to have separate models for every object. 
   * (e.g. User, Blog, Comment, Genre, Category, etc.)
   * We want to be able to sort information based these models.
 * **Fields** are the properties of the model.
   * (e.g. User: name, email, password, etc.)
+* Models are defined using the ```Schema``` interface.
+  * The ```Schema``` interface is used to define the fields of the model.
 
 #### UML (Unified Modeling Language) association diagram
 
+* A diagram that shows the relationships between the models and their multiplicities.
+* **Multiplicities** are the number of instances of a model that can be associated with another model.
+  * (e.g. A user can have many blogs, but a blog can only have one user.)
+
 ![Express Modeling Diagram Example](../Assests/library_website_-_mongoose_express.png)
+
+#### Schemas
+
+* A schema can have an arbitrary number of fields.
+* Each one represents a field in the documents stored in MongoDB. 
+
+* [**Scheme types (fields)**](https://mongoosejs.com/docs/schematypes.html)
+```javascript
+  const schema = new Schema({
+    name: String,
+    binary: Buffer,
+    living: Boolean,
+    updated: { type: Date, default: Date.now() },
+    age: { type: Number, min: 18, max: 65, required: true },
+    mixed: Schema.Types.Mixed,
+    _someId: Schema.Types.ObjectId,
+    array: [],
+    ofString: [String], // You can also have an array of each of the other types too.
+    nested: { stuff: { type: String, lowercase: true, trim: true } },
+  });
+```
+
+* **Defining a Schema(and Creating a Model)**
+```javascript
+    // Require Mongoose
+  const mongoose = require("mongoose");
+
+  // Define a schema
+  const Schema = mongoose.Schema;
+
+  const SomeModelSchema = new Schema({
+    a_string: String,
+    a_date: Date,
+  });
+
+  // Compile model from schema
+  const SomeModel = mongoose.model("SomeModel", SomeModelSchema);
+```
+
+* [**Validation**](https://mongoosejs.com/docs/validation.html) allows you to specify acceptable range of values and error message for validation failures
+
+
+### Setting up the database
+
+* We will use the [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) cloud service to host our database.
+  * The MongoDB server can be downloaded and installed locally as well.
+* We will use Mongoose to connect to MongoDB for this example.
+  * ```npm i mongoose```
+
+* Mongoose requires a connection to MongoDB database
+
+#### To connect to a  locally hosted MongoDB database
+
+```javascript
+// Import the mongoose module
+const mongoose = require("mongoose");
+
+// Set `strictQuery: false` to globally opt into filtering by properties that aren't in the schema
+// Included because it removes preparatory warnings for Mongoose 7.
+// See: https://mongoosejs.com/docs/migrating_to_6.html#strictquery-is-removed-and-replaced-by-strict
+mongoose.set('strictQuery', false);
+
+// Define the database URL to connect to.
+const mongoDB = "mongodb://127.0.0.1/my_database";
+
+// Wait for database to connect, logging an error if there is a problem 
+main().catch(err => console.log(err));
+async function main() {
+  await mongoose.connect(mongoDB);
+}
+```
+
+
 
