@@ -59,3 +59,10 @@ Node Package Manager
 
 npm is a package manager for the JavaScript programming language. It is the default package manager for the JavaScript runtime environment Node.js. It consists of a command line client, also called npm, and an online database of public and paid-for private packages, called the npm registry. The registry is accessed via the client, and the available packages can be browsed and searched via the npm website. The registry contains over 800,000 packages with over 3 million versions.
 
+## OMD/ORM
+
+Object Data Model/ Object Relational Model
+
+Is an approach for interacting with a database. An ODM/ORM represents the websites data as JavaScript objects, which are mapped to the underlying database. Some ORMs are tied to a specific database, while others provide a database agnostic backend.
+ODMs are often slower than raw SQL queries because they use translation code to map between objects and database format. The benefit is that programmers can continue to think in terms of JavaScript objects rather than database semantics and provide a place to perform data validation.
+

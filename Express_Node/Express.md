@@ -11,6 +11,7 @@
 * [Using databases](#using-databases)
 * [Rendering Data](#rendering-data)
 * [File Structure](#file-structure)
+* [Using a Database](#using-a-database)
 
 
 ## What is Express?
@@ -173,4 +174,30 @@ Templates are often used to create the HTML for web pages, but they can also be 
 
 ### To run the app
 
-```DEBUG=helloworld:* npm start```
+```DEBUG={app name}:* npm start```
+
+
+### Setting up server to restart on file changes
+
+```npm install --save-dev nodemon```
+
+[More info](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/skeleton_website)
+[Nodemon](https://www.npmjs.com/package/nodemon)
+
+[back to top](#express-notes)
+
+## Using a database
+
+### Designing the models needed for the app
+
+* The models are the objects that will be stored in the database.
+* When designing the models it makes sense to have separate models for every object 
+  * (e.g. User, Blog, Comment, Genre, Category, etc.)
+  * We want to be able to sort information based these models.
+* **Fields** are the properties of the model.
+  * (e.g. User: name, email, password, etc.)
+
+#### UML (Unified Modeling Language) association diagram
+
+![Express Modeling Diagram Example](../Assests/library_website_-_mongoose_express.png)
+

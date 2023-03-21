@@ -66,11 +66,13 @@ Space complexity is the amount of memory used by an algorithm.
 
 ## Making Faster Algorithms
 
-#### Caching Method
+### Optimization with caching
+#### Unique sorting with caching
   * Keeping track of things you have already seen (caching). When you see something, save it.
   * Then you can do a property lookup on an object (*O(1)* time complexity)
   * You can take a quadratic time algorithm and make it linear time.
 
+##### Example 1
   ```javascript
   // Quadratic time
   const isUnique = (arr) => {
@@ -101,6 +103,29 @@ Space complexity is the amount of memory used by an algorithm.
     return result;
   }
   ```
+##### Example 2
+
+* Transform this simple sorting algorithm into a unique sort. It should not return any duplicate values in the sorted array
+
+  ```javascript
+  const input = [4, 2, 2, 3, 2, 2, 2]; // => output: [2, 3, 4]
+
+  const uniqueSort = (arr) => {
+    let result = [];
+    let cache = {};
+
+    for (let i = 0; i < arr.length; i++) {
+      if (!cache[arr[i]]) {
+        result.push(arr[i]);
+        cache[arr[i]] = true;
+      }
+    }
+    return result.sort((a, b) => a - b);
+  }
+
+#### Caching with memoization
+
+
 
 [Back to top](#algorithms)
 
@@ -114,7 +139,7 @@ Space complexity is the amount of memory used by an algorithm.
 * Finding minimum or maximum value in an array
 * Finding the shortest path in a graph
 * Finding the best combination of elements in a set
-#### Example
+##### Example 
 
 * You are given a set of coins with different values. You are also given a total amount of money. You need to find the minimum number of coins that can be used to make up the total amount of money.
 
