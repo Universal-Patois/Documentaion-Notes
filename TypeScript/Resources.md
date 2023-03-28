@@ -3,7 +3,8 @@
 ## Table of Contents
 * [Types used in TypeScript](#types-used-in-typescript)
 * [Typing Parameters of functions](#typing-parameters-of-functions)
-* [TypeScript for React](#typescript-for-react)
+* [TypeScript events for React](#typescript-for-react)
+* [Index Signatures](#index-signatures)
 
 ## Types used in TypeScript
 
@@ -84,7 +85,21 @@ greetPerson(john); // Output: Hello, John!
 ```
 
 [back to top](#table-of-contents)
-  ## TypeScript for React
+## TypeScript events for React
   
   - [TypeScript Event Typing](https://devtrium.com/posts/react-typescript-events)
+
+## Index Signatures
+
+  * [Index Signature](https://www.typescriptlang.org/docs/handbook/2/index-signatures.html)
+  * Index Signature is a way to define the type of values that can be accessed using an index in an object or class.
+  * It allows you to specify the types of properties that can be accessed using an index signature.
+
+  An index signature is defined using square brackets and the type of the index:
+  
+  ```ts
+    interface MyObject {
+  [key: string]: string;
+  }
+  ```
 

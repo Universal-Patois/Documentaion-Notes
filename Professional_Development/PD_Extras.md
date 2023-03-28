@@ -86,3 +86,41 @@ meet weekly with someone
 * what would a recommendation for an east coast program look like?
 * would there be a similar start date?
 * would there be a similar two week cohort?
+
+## Advice for applying to a position
+
+Applying for jobs can be time consuming!
+
+A lot of jobs have 200+ applicants!
+
+Here’s how to stand out..
+
+Find the hiring manager or recruiter (sometimes it’s listed on the posting) and SEND a personalized message!
+
+You have nothing to lose and not everyone does this.
+
+Introduce yourself, mention you applied to the job and why you would be a great fit. PRO tip- add an extra fact about the company or role to show you did your research.
+
+Since you can’t message those who you aren’t connected to, send a connection request and add a note.
+
+Don’t be shy! Sending a message shows that I’m personable and willing to go above and beyond.
+
+I didn’t do this for all the jobs I applied for and I wish I started doing this earlier!
+
+## Networking tips
+
+* For an open role:
+  * Reach out to a recruiter, hiring manager, or someone in the company/associated with the job
+  * Call attention to the person or company first 
+    * ex. *"Hi, I saw this developer role at Netlify, I have a background in React, I recently applied to the job and was wondering if we could talk soon about the role."*
+* Find recruiters on LinkedIn and just ask them if they have any roles open that you would be a good fit for
+  * *ex. I saw you are looking to hire people for this role. I'm looking for a new role as a developer. I am a Turing graduate and React developer*
+* Bringing more people to my LinkedIn profile
+  * Reach out to recruiters
+  * Repost, Re-share, comment on posts, like posts, post own stuff
+* Join online groups for your interests
+* When reaching out to people/Turing Alum at a company you like
+  * Ask about the role
+  * Tell them what you're working on
+  * Ask if their organization does referrals
+  * Ask if they can recommend someone you can connect with

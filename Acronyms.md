@@ -64,7 +64,3 @@ npm is a package manager for the JavaScript programming language. It is the defa
 ## OMD/ORM
 
 Object Data Model/ Object Relational Model
-
-Is an approach for interacting with a database. An ODM/ORM represents the websites data as JavaScript objects, which are mapped to the underlying database. Some ORMs are tied to a specific database, while others provide a database agnostic backend.
-ODMs are often slower than raw SQL queries because they use translation code to map between objects and database format. The benefit is that programmers can continue to think in terms of JavaScript objects rather than database semantics and provide a place to perform data validation.
-
