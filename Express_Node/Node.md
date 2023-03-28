@@ -43,5 +43,15 @@ server.listen(port, hostname, function () {
 * If a dependency is only used during development, you should instead save it as a "development dependency" (so that your package users don't have to install it in production).
   * Ex: ```npm install eslint --save-dev```
 
+## Terminology
 
+* **Route** - A route is a combination of an HTTP verb(GET, POST, PUT, DELETE) and a URL path (endpoint), and a function that is called to handle that path.
+  * *ex.* ```app.get('/things', function(req, res) { ... })```
+* **Controller** - A controller is a function that is called when a route is matched. It is responsible for sending a response to the client.
+  * *exe.* ```function(req, res) { ... }```
+* **Models** - Models are objects that represent data in your application. They are usually constructed from data that is stored in a database.
+  * *ex.* ```const thing = new Thing({ name: 'foo', description: 'bar' })```
+* **View** - A view is a template that is used to render a response. It is usually a template that is populated with data from a model.
+* **Field** - A field is a property of a model. It is usually a column in a database table.
+* **Schema** - A schema is a definition of the fields that a model has. It is usually used to validate data before it is saved to the database.
   

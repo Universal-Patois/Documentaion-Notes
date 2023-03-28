@@ -11,7 +11,8 @@
 * [Using databases](#using-databases)
 * [Rendering Data](#rendering-data)
 * [File Structure](#file-structure)
-* [Using a Database](#using-a-database)
+* [Using a Database with Mongoose](#using-a-database)
+* [Routes and Controllers](#routes-and-controllers)
 
 
 ## What is Express?
@@ -186,7 +187,7 @@ Templates are often used to create the HTML for web pages, but they can also be 
 
 [back to top](#express-notes)
 
-## Using a database(with Mongoose)
+## Using a database
 
 ### Designing the models needed for the app
 
@@ -280,5 +281,67 @@ async function main() {
 }
 ```
 
+[back to top](#express-notes)
 
+## Routes and Controllers
 
+### Route Functions
+
+* A route function is a function that is called when a route is matched.
+``` javascript
+  router.get("/about", function (req, res) {
+  res.send("About this wiki");
+});
+```
+* The about route is defined using the ```router.get()``` method.
+* It responds only to HTTP GET requests.
+* The first argument is the route path(URL path).
+* The second argument is  a callback function that will be invoked if an HTTP GET request with the path is recieved.
+  * The callback function takes three arguments:
+    * ```req``` - The HTTP request object
+    * ```res``` - The HTTP response object
+    * ```next``` - The next middleware function in the application's request-response cycle.
+* There are many different response methods that can be used to send data to the client.
+  * ```res.send()``` - Sends a response of any type.
+  * ```res.json()``` - Sends a JSON response.
+  * ```res.render()``` - Renders a view template.
+  * ```res.redirect()``` - Redirects a request.
+  * ```res.sendFile()``` - Sends a file as an octet stream.
+  * ```res.download()``` - Sends a file as an attachment.
+  * ```res.sendStatus()``` - Sets the response status code and sends its string representation as the response body.
+
+### Route Paths
+
+* Route paths define the endpoints at which requests can be made.
+* Route paths can be strings, string patterns, or regular expressions.
+
+#### Route path: string pattern syntax
+
+* ```?``` - Matches the preceding character 0 or 1 time. The endpoit must have 0 or 1 of the preceding character(or group).
+  * ```/ab?cd``` - Matches endpoints```/acd``` or ```/abcd```
+* ```+``` - Matches the preceding character 1 or more times. The endpoint must have 1 or more of the preceding character(or group).
+  * ```/ab+cd``` - Matches endpoints ```/abcd```, ```/abbcd```, ```/abbbcd```, etc.
+* ```*``` - The endpoint may have an arbitrary string where the ```*``` character is placed.
+  * ```/ab*cd``` - will match endpoints ```/acd```, ```/abXcd```, ```/abbcd```, ```/abSOMErandomTEXTcd```, etc.
+* ```()``` - Groups subpatterns into a larger pattern. The endpoint must match the entire group. Grouping match on a set of characters to perform another operation on
+  * ```/ab(cd)?e``` - will perform a ```?```-match on the group ```(cd)```- it will match ```/abe``` and ```/abcde```
+
+#### Route path: regular expressions
+
+* Route paths can also be JavaScript regular expressions.
+
+``` javascript
+  app.get(/.*fish$/, function (req, res) {
+  // …
+});
+```
+
+* The above route will match any endpoint that ends with the word ```fish```.
+  * *ex.* ```/goldfish``` and ```/catfish```, but not ```/goldfishes``` or ```/catflap```
+
+#### Route Parameters
+
+* Route parameters are named URL segments that are used to capture the values specified at their position in the URL.
+* The named segments are prefixed with a colon ```:``` and then the name.
+  * *ex.* ```/user/:userId/book/:bookId```
+* The names of route parameters must be made up of "word characters" ```[A-Z, a-z, 0-9, and _]```.
