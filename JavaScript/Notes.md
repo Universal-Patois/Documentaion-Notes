@@ -65,3 +65,4 @@ The following table shows the escape sequences and what they do:
 * ***Alert (bell)***: The alert escape sequence makes a sound. It is used to alert the user of something.
 
 * ***Space***: The space escape sequence adds a space to the string.
+

@@ -1,4 +1,13 @@
-# formatNumber function
+# Reusable functions
+
+* Various functions that can be used for different purposes.
+
+## Table of Contents
+
+* [Format Number Function](#format-number-function)
+* [Remove all non-alphanumeric characters from a string](#remove-all-non-alphanumeric-characters-from-a-string)
+
+## Format Number Function
 
 ```js
 function formatNumber(num) {
@@ -6,11 +15,11 @@ function formatNumber(num) {
 }
 ```
 
-## What it does
+### What it does
 
 This code replaces every digit that is followed by groups of three digits (but not at the end of the number) with the same digit followed by a comma, effectively formatting the number with commas as thousands separators. 
 
-## How it works
+### How it works
 
 * The [toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString) method is called on a number, converting it to a string. Then, the replace() method is used to match a regular expression pattern to add commas to the number.
 
@@ -20,14 +29,32 @@ This code replaces every digit that is followed by groups of three digits (but n
 
 * The replacement string '$1,' inserts a comma after the matched digit. The $1 refers to the first capturing group in the pattern, which is the matched digit.
 
-## Positive lookahead
+### Positive lookahead
 
 See the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions#positive_and_negative_lookahead_assertions) for more information on positive lookahead.
 
-See notes in Regex section(Lookarounds) for more information on positive lookahead's.
+See notes in Regex section [Lookarounds](../Regex/Lookarounds.md#positive-lookaheadlookbehind) for more information on positive lookahead's.
 
-## Negative lookahead
+### Negative lookahead
 
 See the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions#positive_and_negative_lookahead_assertions) for more information on negative lookahead.
 
-See notes in Regex section(Lookarounds) for more information on negative lookahead's.
+See notes in Regex section [Negative Lookarounds](../Regex/Lookarounds.md#negative-lookaheadlookbehind) for more information on negative lookahead's.
+
+## Remove all non-alphanumeric characters from a string
+
+```javascript
+const str = 'Hello, World!';
+const newStr = str.replace(/[^a-z0-9]/gi, '');
+```
+
+### Here is what each part of the code does:
+
+* ```/[^a-zA-Z0-9]/gi```: This is a regular expression that matches any character that is not a letter or a digit (i.e., non-alphanumeric characters)
+* The ``^`` symbol: Means that the pattern will match any character that is not in the set of characters specified
+  * The ``^`` character inside a character class (enclosed in square brackets `[]`) is used to create a negated character class
+  * Without the ``^`` symbol, the regular expression would match only the characters specified in the pattern
+* The ``g`` flag: Means that the search is global (i.e., it will match all instances of the pattern, not just the first one)
+* The ``i`` flag: Means case-insensitive (i.e., it will match both upper- and lowercase letters)
+  * Without the ``i`` flag, the regular expression would only match the exact case of the letters specified in the pattern
+* ``''``: This is the replacement string that will replace any matches found by the regular expression. In this case, it is an empty string, effectively removing any non-alphanumeric characters from the string.

@@ -4,19 +4,19 @@
 * Hashing is a technique to convert a range of key values into a range of indexes of an array.
 
 ## Table of Contents
-* [Unique sorting with caching](#unique-sorting-with-caching)
+* [Hash Map Method](#unique-sorting-with-caching)
 * [Caching with Memoization](#caching-with-memoization)
 
-## Unique sorting with caching
-  * Keeping track of things you have already seen (caching). When you see something, save it.
-  * Then you can do a property lookup on an object (*O(1)* time complexity)
-  * You can take a quadratic time algorithm and make it linear time.
-
-### When to use
+## When to use
   * Find duplicates
   * Find unique values
   * Sort an array
+  * Caching
 
+## Hash Map Method
+  * Keeping track of things you have already seen (caching). When you see something, save it.
+  * Then you can do a property lookup on an object (*O(1)* time complexity)
+  * You can take a quadratic time algorithm and make it linear time.
 ### Example 1
   ```javascript
   // Quadratic time
@@ -48,7 +48,7 @@
     return result;
   }
   ```
-#### Example 2
+### Example 2
 
 * Transform this simple sorting algorithm into a unique sort. It should not return any duplicate values in the sorted array
 
@@ -74,10 +74,7 @@
 
 * Memoization is a technique for caching the results of a function. It is a way to store the results of a function call so that they can be used again later without having to recompute them.
 
-### When to use
-
-
-#### Example
+### Example
   ```javascript
   const memoize = (fn) => {
     let cache = {};
@@ -114,3 +111,26 @@
   ```
 
 [Back to top](#table-of-contents)
+
+## Using ES6 Map
+
+* ES6 Map is a data structure that stores key-value pairs. It is similar to an object, but the keys can be any data type
+* It is a collection of elements where each element is stored as a Key, value pair
+* The keys in Map are ordered while adding the elements to the Map, while keys added to object are not ordered. Thus, when iterating over it, a Map object returns elements in order of insertion.
+
+### Example
+
+```javascript
+  var twoSum = (nums, target) => {
+  let map = new Map()
+
+  for(let i = 0; i < nums.length; i++) {
+    if(map.has(target - nums[i])) {
+      return [map.get(target - nums[i]), i]
+    } else {
+      map.set(nums[i], i)
+    }
+  }
+  return []
+}
+```
