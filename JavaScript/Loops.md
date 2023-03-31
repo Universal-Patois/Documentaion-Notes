@@ -89,3 +89,23 @@ This "fallthrough by default" behavior is a common pitfall when using `switch` i
 Inside a function, `return` can also be used instead of `break` to avoid this problem.
 
 [concept-comparison]: /tracks/javascript/concepts/comparison
+
+## For Of Loops
+
+* The `for...of` loop is used to iterate over the elements of an iterable objects like `Array`, `Map`, `Set`, `String`, `TypedArray`, `arguments` object and so on.
+
+```javascript
+const arr = [1, 2, 3];
+
+for (let element of arr) {
+  console.log(element);
+}
+```
+
+### Syntax
+
+```javascript
+for (variable of iterable) {
+  statement;
+}
+```

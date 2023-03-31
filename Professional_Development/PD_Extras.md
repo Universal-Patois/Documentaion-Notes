@@ -51,7 +51,8 @@ Prompt attention: Ask-
 
 write out your transition story- talk about positive change you were looking to  make as you went step to step. fishing was exciting because...
 
-I orginally picked psychology because I was interested in understanding and relating to people more. When I graduated I realized I wasnt going to be able to find a job unless I had a masters degree and I wasnt sure if I wanted more student loans. I eventually found the fishing industry from a roommate. I really enjoyed the challenge of it and how it allowed me to meet people from all over the world. But, after awhile I wanted a job that was more mentally stimulating. One that I could continue to learn new things and apply them to something I could help create and be a part of. When I was introduced to programming I found I really enjoyed the problem solving part aspect and breadth of knowledge within the field.
+I orginally picked psychology because I was interested in understanding and relating to people more.
+ When I graduated I realized I wasnt going to be able to find a job unless I had a masters degree and I wasnt sure if I wanted more student loans. I eventually found the fishing industry from a roommate. I really enjoyed the challenge of it and how it allowed me to meet people from all over the world. But, after awhile I wanted a job that was more mentally stimulating. One that I could continue to learn new things and apply them to something I could help create and be a part of. When I was introduced to programming I found I really enjoyed the problem solving part aspect and breadth of knowledge within the field.
 
 your story from perspective of co workers
 

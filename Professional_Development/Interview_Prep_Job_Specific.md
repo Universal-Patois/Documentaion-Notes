@@ -48,12 +48,21 @@ I got into psychology because I wanted to help others. But I didnt pursue it bec
 
 I then traveled a lot and found the fishing industry. It was a unique experience that was challenging and enjoyable at times.
 
-But I didnt just want a job that made me money. I wanted to do something where I could challenge myself and learn new things.
-While at the same time making a difference in the others and the world.
+But I didnt just want a job that made me money. I wanted one that I could continue to learn new things and apply them to something I could help create and be a part of.
 
 I discovered coding and really enjoyed the problem solving aspect of it. And that there is such a depth of information to learn for almost every topic.
 But also I realized that programming is really just a way to help others with technology.
 And that by working with products that are used by others,I can help make a difference in their lives and reach more people than I ever could with psychology
+
+## what are you looking for in the future
+
+* I want to continue to deepen my skills as a front end developer while also learning more about the back end and incorporating that knowledge.
+* I eventually want to work in a full stack role. I really enjoy learning how both the front and back end technologies work together.
+  * I enjoy writing quality code that is thoroughly tested and documented, is accessible, meets seo, and is optimized for performance.
+* My goal for even further down the line is to work as a product manager
+  * I want to be able to design a product that is optimized based on the clients needs
+  * Understand how to write scalable code that is easy to maintain and update, that meets time and space complexity requirements
+
 
 
 
