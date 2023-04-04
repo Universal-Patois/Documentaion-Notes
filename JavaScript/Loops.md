@@ -1,3 +1,12 @@
+# Loops
+
+## Table of Contents
+
+* [While Loops](#while-loops)
+* [For..in Loops](#forin-loops)
+* [Switch Statements](#switch-statements)
+* [For..of Loops](#forof-loops)
+
 ## While Loops
 
 With a while loop, you can execute code repeatably as long as a certain condition is fulfilled.
@@ -39,7 +48,7 @@ while (i < 100) {
 }
 ```
 
-## For In Loops
+## For..in Loops
 
 There is a special `for...in` loop to iterate over all keys of an object.
 
@@ -90,9 +99,11 @@ Inside a function, `return` can also be used instead of `break` to avoid this pr
 
 [concept-comparison]: /tracks/javascript/concepts/comparison
 
-## For Of Loops
+## For..of Loops
 
 * The `for...of` loop is used to iterate over the elements of an iterable objects like `Array`, `Map`, `Set`, `String`, `TypedArray`, `arguments` object and so on.
+* When you want to work with the value directly in each iteration and do not require the index at all, you can use a `for...of` loop.
+* `for...of` works like the basic for loop shown above, but instead of having to deal with the index as a variable in the loop, you are provided with the value directly.
 
 ```javascript
 const arr = [1, 2, 3];

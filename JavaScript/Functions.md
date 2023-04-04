@@ -58,3 +58,15 @@ const newStr = str.replace(/[^a-z0-9]/gi, '');
 * The ``i`` flag: Means case-insensitive (i.e., it will match both upper- and lowercase letters)
   * Without the ``i`` flag, the regular expression would only match the exact case of the letters specified in the pattern
 * ``''``: This is the replacement string that will replace any matches found by the regular expression. In this case, it is an empty string, effectively removing any non-alphanumeric characters from the string.
+
+
+## Checking if a number is even or odd
+
+```javascript
+function isEven(num) {
+  return num % 2 === 0;
+}
+```
+
+* The `%` symbol is the modulus operator, which gives you the remainder of the division between `num` and `2`
+* If `num` is an even number, the remainder of num divided by `2` will always be `0`
