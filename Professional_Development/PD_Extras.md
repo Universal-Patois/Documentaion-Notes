@@ -1,15 +1,25 @@
-# Extra Things to Remember for PD
+<style>
+r { color: Crimson }
+o { color: Coral }
+y { color: Khaki }
+g { color: MediumSpringGreen }
+b { color: SkyBlue }
+i { color: Violet }
+h { color:  Plum }
+hh { color: Pink }
+</style>
+# <r>Extra Things to Remember for PD</r>
 
-## When offered a position/ An interviewer seems interested
+## <o>When offered a position/ An interviewer seems interested</o>
 
 * "To make the onboarding process easier for us what can I do over the weekend?"
 
-[] Create app in tech stack of job
-[] Show project of it
+    * Create app in tech stack of job
+    * Show project of it
 
-* Ask: "Is there anything that would cause you to hesitate to recommend me to the next round?"
+* <h>Ask:</h> "Is there anything that would cause you to hesitate to recommend me to the next round?"
 
-### Behavioral Prep
+### <y>Behavioral Prep</y>
 
 * Write down accomplishments
 
@@ -25,7 +35,7 @@
 * Quality Assurance example- Pull requests, code reviews, paired programming circleCI
 * TDD- benefits- it isolates issues, saves time/money testing compared to saving testing until the end
 
-### Tech Prep
+### <y>Tech Prep</y>
 
 Prompt attention: Ask-
 
@@ -38,12 +48,12 @@ Prompt attention: Ask-
 * Quality assurance can be: a Pull request, code review, paired programming or circleCI
 * TDD benefits- isolates issues, can save time/money by not leaving it for the end of the application
 
-### Takeaways
+### <y>Takeaways</y>
 
 * Bring problem solving to elevator pitch- I wanted to change from my previous career for more flexibilty also love puzzles and problem solving
 * Example of negative critical feedback and how I took it- it can be implicit feedback as well
 
-### Feedback
+### <y>Feedback</y>
 
 * communicate you have a process to learn what you need
 * communicate flexibility
@@ -62,33 +72,7 @@ keep finding people to do mock interviews with
 practice technical questions out loud
 meet weekly with someone
 
-
-
-* project before two week cohort?
-* what does that look like?
-
-* what is exactly is the two week cohort? 
-* what do we do?
-* what is the criteria the hiring managers usually use to decide whether they want to offer an internship?
-* what happens if we are not selected after the two weeks?
-* is the two weeks paid?
-
-* in person everyday for two weeks?
-* then hybrid 60%/40% remote/in person for the internship?
-* will they want to continue hybrid after the internship?
-* will they ever allow remote work?
-
-* what is the compensation for the internship?
-* relocation assistance?
-* what is the probability of getting offered a salary after the internship?
-* how do they determine that?
-* what happens if they don't offer a long term position?
-
-* what would a recommendation for an east coast program look like?
-* would there be a similar start date?
-* would there be a similar two week cohort?
-
-## Advice for applying to a position
+## <o>Advice for applying to a position</o>
 
 Applying for jobs can be time consuming!
 
@@ -108,20 +92,33 @@ Don’t be shy! Sending a message shows that I’m personable and willing to go 
 
 I didn’t do this for all the jobs I applied for and I wish I started doing this earlier!
 
-## Networking tips
+## <o>Networking tips</o>
 
-* For an open role:
+* <i>For an open role:</i>
   * Reach out to a recruiter, hiring manager, or someone in the company/associated with the job
   * Call attention to the person or company first 
-    * ex. *"Hi, I saw this developer role at Netlify, I have a background in React, I recently applied to the job and was wondering if we could talk soon about the role."*
+    * <h>ex.</h> <hh>*"Hi, I saw this developer role at Netlify, I have a background in React, I recently applied to the job and was wondering if we could talk soon about the role."*</hh>
 * Find recruiters on LinkedIn and just ask them if they have any roles open that you would be a good fit for
-  * *ex. I saw you are looking to hire people for this role. I'm looking for a new role as a developer. I am a Turing graduate and React developer*
+  * <h>ex.</h> <hh>*"I saw you are looking to hire people for this role. I'm looking for a new role as a developer. I am a Turing graduate and React developer"*</hh>
 * Bringing more people to my LinkedIn profile
   * Reach out to recruiters
-  * Repost, Re-share, comment on posts, like posts, post own stuff
+  * Re-post, Re-share, comment on posts, like posts, post own stuff
 * Join online groups for your interests
 * When reaching out to people/Turing Alum at a company you like
   * Ask about the role
   * Tell them what you're working on
   * Ask if their organization does referrals
   * Ask if they can recommend someone you can connect with
+
+
+finisher- has eye for detail, everything is branded the right way
+
+make something easy 
+
+have a lot of power- help people on backend who don't understand design side as much
+
+being able to change behavior based on that
+
+speak with roy, do a reply all with isabella.
+
+send resume to ray- only child, pastor of a church, 

@@ -15,6 +15,7 @@ hh { color: Pink }
 * Hashing is a technique to convert a range of key values into a range of indexes of an array.
 
 ## <o>Table of Contents</o>
+* [When to use](#when-to-use)
 * [Hash Map Method](#unique-sorting-with-caching)
 * [Caching with Memoization](#caching-with-memoization)
 

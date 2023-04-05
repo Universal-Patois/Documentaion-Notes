@@ -1,6 +1,16 @@
+<style>
+r { color: Crimson }
+o { color: Coral }
+y { color: Khaki }
+g { color: MediumSpringGreen }
+b { color: SkyBlue }
+i { color: Violet }
+h { color:  Plum }
+hh { color: Pink }
+</style>
 # [Express Notes](https://expressjs.com/)
 
-**Contents:**
+## <o>Table of Contents</o>
 * [What is Express?](#what-is-express)
 * [What does Express do?](#what-does-express-do)
 * [Simple example of an Express server](#simple-example-of-an-express-server)
@@ -15,12 +25,12 @@
 * [Routes and Controllers](#routes-and-controllers)
 
 
-## What is Express?
+## <o>What is Express?</o>
 
 * Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 * Unopinionated: You can insert almost any compatible middleware you like into the request handling chain, in almost any order you like.
 
-## What does Express do?
+## <o>What does Express do?</o>
 
 * Write handlers for requests with different HTTP verbs at different URL paths (routes)
 * Integrate with "view" rendering engines in order to generate responses by inserting data into templates
@@ -30,7 +40,7 @@
 
 [back to top](#express-notes)
 
-### Simple example of an Express server
+### <y>Simple example of an Express server</y>
 
 ```javascript
 // Import express
@@ -51,7 +61,7 @@ app.listen(port, function () {
   console.log(`Example app listening on port ${port}!`);
 });
 ```
-## What is a middleware?
+## <o>What is a middleware?</o>
 
 * Middleware is a function that has access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle. The next middleware function is commonly denoted by a variable named next.
 * Middleware functions can perform the following tasks:
@@ -65,31 +75,31 @@ app.listen(port, function () {
 
 * **For some middleware, it is important to know the order in which they are called.**
   
-  *For example: If session middleware depends on cookie middleware, then the cookie handler must be added first.*
+  <h>*For example: If session middleware depends on cookie middleware, then the cookie handler must be added first.*</h>
 
-The **only** difference between a middleware function and a route handler callback is that middleware functions have a third argument ``next``, which middleware functions are expected to call if they are not that which completes the request cycle
+The <hh>**only**</hh> difference between a middleware function and a route handler callback is that middleware functions have a third argument ``next``, which middleware functions are expected to call if they are not that which completes the request cycle
 
 [back to top](#express-notes)
-## Working with Express
+## <o>Working with Express</o>
 
-### Importing modules
+### <y>Importing modules</y>
 
 * Importing modules is done with the ```require()``` function.
 * Specify the name of the module to import as a string ```require('express')```
 * You can create your own modules and import them as well
 * If you want to export a complete object from a module, you can use ```module.exports```
 
-*** You can think of ```exports``` as a shortcut to ```module.exports``` ***
+<hh> You can think of ```exports``` as a shortcut to ```module.exports``` </hh>
 
-### Handling errors
+### <y>Handling errors</y>
 
 * Express provides a built-in error handler that prints stack traces to the console.
 * The middleware function takes in 4 arguments: ```err```, ```req```, ```res```, and ```next```
 * The error handler is added as the last middleware function in the application.
 
-Note: HTTP(404) and other errors are not treated as errors. You need to add a middleware function to handle them.
+<h>Note</h>: HTTP(404) and other errors are not treated as errors. You need to add a middleware function to handle them.
 
-### Using databases
+### <y>Using databases</y>
 
 * Express app can use any database mechanism that is supported by Node.js.
   * MySQL, MongoDB, PostgreSQL, SQLite, Redis, etc.
@@ -97,7 +107,7 @@ Note: HTTP(404) and other errors are not treated as errors. You need to add a mi
   * ```npm install mysql```
 * In the Express app, you require the database driver, connect to the database, and then create, read, update, and delete (CRUD) operations.
 
-**Example:** *(Find 'mammal' records using MongoDB)*
+<h>**Example:**</h> *Find 'mammal' records using MongoDB*
 
 ```javascript
 const MongoClient = require("mongodb").MongoClient;
@@ -115,13 +125,13 @@ MongoClient.connect("mongodb://localhost:27017/animals", (err, client) => {
     });
 });
 ```
-Another approach is the access the database indirectly, via an **ORM (Object Relational Mapper)**
+Another approach is the access the database indirectly, via an <h>**ORM (Object Relational Mapper)**</h>
 
 * In this approach you define your data as "objects" and then use the ORM to map these objects to the underlying database format.
 * The benefit of this approach is that you can think in terms of JavaScript objects rather than database semantics.
 
 [back to top](#express-notes)
-### Rendering data (views)
+### <y>Rendering data (views)</y>
 
 * Express provides a built-in view engine for rendering HTML views.
 * Template engines (view engines) allow you to specify the structure of your output document in a template
@@ -138,7 +148,7 @@ Another approach is the access the database indirectly, via an **ORM (Object Rel
 
 Templates are often used to create the HTML for web pages, but they can also be used to generate other types of documents.
 
-### File structure
+### <y>File structure</y>
 
 * Typically it makes sense to split your application into files based on: 
   * Function:
@@ -148,37 +158,37 @@ Templates are often used to create the HTML for web pages, but they can also be 
 
 [back to top](#express-notes)
 
-## Setting up an Express application
+## <o>Setting up an Express application</o>
 
-### Installing Express Application Generator
+### <y>Installing Express Application Generator</y>
 
 * A tool that generates an Express application "skeleton"
 
 ```npm install express-generator -g```
 
-### To create and Express app
+### <y>To create and Express app</y>
 
 * Navigate to where you want to create it and run
 
 ```express (app name)```
 
-**OR**
+<h>**OR**</h>
 
 ```npx express-generator (app name)```
 
-*Then*
+<hh>*Then*</hh>
 
 ```javascript
   cd (app name)
   npm install
 ```
 
-### To run the app
+### <y>To run the app</y>
 
 ```DEBUG={app name}:* npm start```
 
 
-### Setting up server to restart on file changes
+### <y>Setting up server to restart on file changes</y>
 
 ```npm install --save-dev nodemon```
 
@@ -187,30 +197,30 @@ Templates are often used to create the HTML for web pages, but they can also be 
 
 [back to top](#express-notes)
 
-## Using a database
+## <o>Using a database</o>
 
-### Designing the models needed for the app
+### <y>Designing the models needed for the app</y>
 
 * The models are the objects that will be stored in the database.
 * The model represents a collection of documents in the database that you can search.
-  * The model's **instances** represent individual documents that you can save and retrieve.
+  * The model's <hh>**instances**</hh> represent individual documents that you can save and retrieve.
 * When designing the models it makes sense to have separate models for every object. 
   * (e.g. User, Blog, Comment, Genre, Category, etc.)
   * We want to be able to sort information based these models.
-* **Fields** are the properties of the model.
+* <h>**Fields**</h> are the properties of the model.
   * (e.g. User: name, email, password, etc.)
 * Models are defined using the ```Schema``` interface.
   * The ```Schema``` interface is used to define the fields of the model.
 
-#### UML (Unified Modeling Language) association diagram
+#### <g>UML (Unified Modeling Language) association diagram</g>
 
 * A diagram that shows the relationships between the models and their multiplicities.
-* **Multiplicities** are the number of instances of a model that can be associated with another model.
+* <h>**Multiplicities**</h> are the number of instances of a model that can be associated with another model.
   * (e.g. A user can have many blogs, but a blog can only have one user.)
 
 ![Express Modeling Diagram Example](../Assests/library_website_-_mongoose_express.png)
 
-#### Schemas
+#### <g>Schemas</g>
 
 * A schema can have an arbitrary number of fields.
 * Each one represents a field in the documents stored in MongoDB. 
@@ -251,7 +261,7 @@ Templates are often used to create the HTML for web pages, but they can also be 
 * [**Validation**](https://mongoosejs.com/docs/validation.html) allows you to specify acceptable range of values and error message for validation failures
 
 
-### Setting up the database
+### <y>Setting up the database</y>
 
 * We will use the [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) cloud service to host our database.
   * The MongoDB server can be downloaded and installed locally as well.
@@ -260,7 +270,7 @@ Templates are often used to create the HTML for web pages, but they can also be 
 
 * Mongoose requires a connection to MongoDB database
 
-#### To connect to a  locally hosted MongoDB database
+#### <g>To connect to a  locally hosted MongoDB database</g>
 
 ```javascript
 // Import the mongoose module
@@ -283,9 +293,9 @@ async function main() {
 
 [back to top](#express-notes)
 
-## Routes and Controllers
+## <o>Routes and Controllers</o>
 
-### Route Functions
+### <y>Route Functions</y>
 
 * A route function is a function that is called when a route is matched.
 ``` javascript
@@ -310,12 +320,12 @@ async function main() {
   * ```res.download()``` - Sends a file as an attachment.
   * ```res.sendStatus()``` - Sets the response status code and sends its string representation as the response body.
 
-### Route Paths
+### <y>Route Paths</y>
 
 * Route paths define the endpoints at which requests can be made.
 * Route paths can be strings, string patterns, or regular expressions.
 
-#### Route path: string pattern syntax
+#### <g>Route path: string pattern syntax</g>
 
 * ```?``` - Matches the preceding character 0 or 1 time. The endpoit must have 0 or 1 of the preceding character(or group).
   * ```/ab?cd``` - Matches endpoints```/acd``` or ```/abcd```
@@ -326,7 +336,7 @@ async function main() {
 * ```()``` - Groups subpatterns into a larger pattern. The endpoint must match the entire group. Grouping match on a set of characters to perform another operation on
   * ```/ab(cd)?e``` - will perform a ```?```-match on the group ```(cd)```- it will match ```/abe``` and ```/abcde```
 
-#### Route path: regular expressions
+#### <g>Route path: regular expressions</g>
 
 * Route paths can also be JavaScript regular expressions.
 
@@ -339,9 +349,9 @@ async function main() {
 * The above route will match any endpoint that ends with the word ```fish```.
   * *ex.* ```/goldfish``` and ```/catfish```, but not ```/goldfishes``` or ```/catflap```
 
-#### Route Parameters
+#### <g>Route Parameters</g>
 
 * Route parameters are named URL segments that are used to capture the values specified at their position in the URL.
 * The named segments are prefixed with a colon ```:``` and then the name.
-  * *ex.* ```/user/:userId/book/:bookId```
+  * <h>*ex.*</h> ```/user/:userId/book/:bookId```
 * The names of route parameters must be made up of "word characters" ```[A-Z, a-z, 0-9, and _]```.

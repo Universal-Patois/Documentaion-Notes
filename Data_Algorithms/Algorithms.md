@@ -1,41 +1,51 @@
-# Algorithms
+<style>
+r { color: Crimson }
+o { color: Coral }
+y { color: Khaki }
+g { color: MediumSpringGreen }
+b { color: SkyBlue }
+i { color: Violet }
+h { color:  Plum }
+hh { color: Pink }
+</style>>
+# <h1 <r>Algorithms</r>
 
 * Algorithms are a set of instructions to solve a problem.
 * Algorithmic thinking is the process of breaking down a problem into smaller problems.
 
-## Table of Contents
-[Types of Tech Challenges](#types-of-tech-challenges)
-[Greedy Approach](#greedy-approach)
-[Quick Sort](#quick-sort)
+## <o>Table of Contents</o>
+* [Types of Tech Challenges](#types-of-tech-challenges)
+* [Greedy Approach](#greedy-approach)
+* [Quick Sort](#quick-sort)
 
-## Types of Tech Challenges
-### Sorting
+## <o>Types of Tech Challenges</o>
+### <y>Sorting</y>
 
 * Algorithms used for sorting data
-### Searching
+### <y>Searching</y>
 
-### Pattern Matching
+### <y>Pattern Matching</y>
 
-### Grids
+### <y>Grids</y>
 
-### Math
+### <y>Math</y>
 
-### Language Specific
+### <y>Language Specific</y>
 
-### Optimization
-## Greedy Approach
+### <y>Optimization</y>
+#### <g>Greedy Approach</g>
 
 * A common algorithmic technique used to solve optimization problems
 * It is a greedy algorithm because it makes the best choice at each step as it attempts to find the optimal solution.
 
-### Can be used to solve:
+##### <b>Can be used to solve</b>
 
 * Finding minimum or maximum value in an array
 * Finding the shortest path in a graph
 * Finding the best combination of elements in a set
-#### Example 
+###### <i>Example</i>
 
-* You are given a set of coins with different values. You are also given a total amount of money. You need to find the minimum number of coins that can be used to make up the total amount of money.
+  * You are given a set of coins with different values. You are also given a total amount of money. You need to find the minimum number of coins that can be used to make up the total amount of money.
 
   ```javascript
   const coins = [1, 2, 5, 10, 20, 50, 100, 200];
@@ -57,18 +67,18 @@
   greedyApproach(coins, total); // [100, 50, 10, 5, 2, 1]
   ```
 
-## Quick Sort
+#### <g>Quick Sort</g>
 
 * version of greedy approach
 * selects a pivot element
 * sorts the rest of the elements in to two groups based on whether they are less than or greater than the pivot element
 * the built-in sort method in JavaScript uses quick sort
 
-### Can be used to solve
+##### <b>Can be used to solve</b>
 
 * Sorting an array
 
-#### Example
+#### <i>Example</i>
 
   ```javascript
   const quickSort = (arr) => {

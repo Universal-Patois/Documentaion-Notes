@@ -1,12 +1,22 @@
-# TypeScript Notes
+<style>
+r { color: Crimson }
+o { color: Coral }
+y { color: Khaki }
+g { color: MediumSpringGreen }
+b { color: SkyBlue }
+i { color: Violet }
+h { color:  Plum }
+hh { color: Pink }
+</style>
+# <r>TypeScript Notes</r>
 
-## Table of Contents
+## <o>Table of Contents</o>
 * [Types used in TypeScript](#types-used-in-typescript)
 * [Typing Parameters of functions](#typing-parameters-of-functions)
 * [TypeScript events for React](#typescript-for-react)
 * [Index Signatures](#index-signatures)
 
-## Types used in TypeScript
+## <o>Types used in TypeScript</o>
 
 * `string`: A string of text. e.g. `"Hello World"`
 * `number`: A number. e.g. `10`
@@ -25,9 +35,9 @@ These are some of the most commonly used types in TypeScript, but there are many
 
 [back to top](#table-of-contents)
 
-## Typing Parameters of functions
+## <o>Typing Parameters of functions</o>
 
-#### Type a parameter as a string
+### <y>Type a parameter as a string</y>
 
 ```ts
 function greet(name: string) {
@@ -37,7 +47,7 @@ function greet(name: string) {
 greet("John"); // Output: Hello, John!
 ```
 
-#### Type a parameter as a number
+### <y>Type a parameter as a number</y>
 
 ```ts
 function addNumbers(x: number, y: number) {
@@ -47,7 +57,7 @@ function addNumbers(x: number, y: number) {
 const result = addNumbers(10, 5); // Result: 15
 ```
 
-#### Type a parameter as a boolean
+### <y>Type a parameter as a boolean</y>
 
 ```ts
 function isOldEnough(age: number): boolean {
@@ -55,7 +65,7 @@ function isOldEnough(age: number): boolean {
 }
 ```
 
-#### Type a parameter as an array
+### <y>Type a parameter as an array</y>
 
 ```ts
 function getSum(numbers: number[]) {
@@ -68,7 +78,7 @@ const numbers = [1, 2, 3, 4, 5];
 const result = getSum(numbers); // Result: 15
 ```
 
-#### Type a parameter as an object
+### <y>Type a parameter as an object</y>
 
 ```ts
 interface Person {
@@ -85,11 +95,11 @@ greetPerson(john); // Output: Hello, John!
 ```
 
 [back to top](#table-of-contents)
-## TypeScript events for React
+## <o>TypeScript events for React</o>
   
   - [TypeScript Event Typing](https://devtrium.com/posts/react-typescript-events)
 
-## Index Signatures
+## <o>Index Signatures</o>
 
   * [Index Signature](https://www.typescriptlang.org/docs/handbook/2/index-signatures.html)
   * Index Signature is a way to define the type of values that can be accessed using an index in an object or class.

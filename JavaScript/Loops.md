@@ -1,13 +1,23 @@
-# Loops
+<style>
+r { color: Crimson }
+o { color: Coral }
+y { color: Khaki }
+g { color: MediumSpringGreen }
+b { color: SkyBlue }
+i { color: Violet }
+h { color:  Plum }
+hh { color: Pink }
+</style>
+# <r>Loops</r>
 
-## Table of Contents
+## <o>Table of Contents</o>
 
 * [While Loops](#while-loops)
 * [For..in Loops](#forin-loops)
 * [Switch Statements](#switch-statements)
 * [For..of Loops](#forof-loops)
 
-## While Loops
+## <o>While Loops</o>
 
 With a while loop, you can execute code repeatably as long as a certain condition is fulfilled.
 It is written with the `while` keyword followed by a condition wrapped in round brackets and a code block that contains the _body_ of the loop wrapped in curly brackets.
@@ -18,7 +28,7 @@ while (condition) {
 }
 ```
 
-JavaScript also has a do-while loop.
+JavaScript also has a <i>do-while loop</i>.
 Here the condition is checked after the loop body was executed.
 This is useful when the condition depends on evaluations done in the body.
 
@@ -48,7 +58,7 @@ while (i < 100) {
 }
 ```
 
-## For..in Loops
+## <o>For..in Loops</o>
 
 There is a special `for...in` loop to iterate over all keys of an object.
 
@@ -68,11 +78,11 @@ for (let key in obj) {
 To avoid subtle errors, you should always assume the `for...in` loop visits the keys in an arbitrary order.
 Also, be aware that `for...in` includes inherited keys in its iteration.
 
-## Switch Statements
+## <o>Switch Statements</o>
 
 * JavaScript also has a switch-statement to conditionally execute logic.
 * It is used when a single variable needs to be compared to multiple variants.
-* The comparison is done by checking for strict equality (`===`), see [concept comparison][concept-comparison].
+* The comparison is done by checking for strict equality (`===`)
 * For some variable `x`, the switch statement in JavaScript has the following syntax.
 
 <!-- prettier-ignore-start -->
@@ -97,9 +107,7 @@ That means without any `break` statement all the code in the cases below the fir
 This "fallthrough by default" behavior is a common pitfall when using `switch` in JavaScript.
 Inside a function, `return` can also be used instead of `break` to avoid this problem.
 
-[concept-comparison]: /tracks/javascript/concepts/comparison
-
-## For..of Loops
+## <o>For..of Loops</o>
 
 * The `for...of` loop is used to iterate over the elements of an iterable objects like `Array`, `Map`, `Set`, `String`, `TypedArray`, `arguments` object and so on.
 * When you want to work with the value directly in each iteration and do not require the index at all, you can use a `for...of` loop.
@@ -113,7 +121,7 @@ for (let element of arr) {
 }
 ```
 
-### Syntax
+### <y>Syntax</y>
 
 ```javascript
 for (variable of iterable) {

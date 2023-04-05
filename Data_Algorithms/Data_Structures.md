@@ -1,10 +1,12 @@
 <style>
-r { color: Red }
-o { color: Orange }
-y { color: Yellow }
-g { color: Green }
-b { color: Blue }
-p { color: Purple }
+r { color: Crimson }
+o { color: Coral }
+y { color: Khaki }
+g { color: MediumSpringGreen }
+b { color: SkyBlue }
+i { color: Violet }
+h { color:  Plum }
+hh { color: Pink }
 </style>
 
 # <r>Common Data Structures</r>
@@ -33,15 +35,15 @@ p { color: Purple }
 ### <y>Linked List</y>
 
 * A linear data structure consisting of a sequence of nodes, where each node contains a data value and a reference to the next node in the sequence
-  * **Slightly-linked list-** each node only has reference to its next node
-  * **Doubly-linked list-** each node has reference to its next and previous node
+  * <h>**Slightly-linked list-**</h> each node only has reference to its next node
+  * <h>**Doubly-linked list-**</h> each node has reference to its next and previous node
 * Unlike arrays, which have a fixed size, linked lists can easily grow or shrink as needed 
 * Composed of nodes pointing to other nodes which could end up with a node in the list pointing to another node present in the list, leading to an infinite loop
 
 #### <g>What its good for</g>
 
-* For **dynamic data structures** where the size of the data can change over time, as they allow for efficient insertion and deletion of elements
-* For implementing **stacks**, **queues**, and other abstract data types
+* For <h>**dynamic data structures**</h> where the size of the data can change over time, as they allow for efficient insertion and deletion of elements
+* For implementing <h>**stacks**, **queues**</h>, and other abstract data types
 * For situations where you need to efficiently insert or delete elements from the middle of the sequence
 
 #### <g>Drawbacks</g>
@@ -66,13 +68,13 @@ p { color: Purple }
 
 #### <g>What is a Queue?</g>
 
-* *Queue is a FIFO data structure*
+* <h>*Queue is a FIFO data structure*</h>
   * First in, first out
-* *Queue is a linear data structure*
+* <h>*Queue is a linear data structure*</h>
   * Elements are added from one end and removed from the other end
-* *A Queue should support two operations*
-  * Enqueue - Add an element to the end of the queue
-  * Dequeue - Remove an element from the front of the queue
+* <h>*A Queue should support two operations*</h>
+  * <hh>Enqueue</hh> - Add an element to the end of the queue
+  * <hh>Dequeue</hh> - Remove an element from the front of the queue
 
 
 #### <g>Solutions they solve or are best for</g>

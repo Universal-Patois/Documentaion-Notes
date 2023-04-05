@@ -1,6 +1,16 @@
-# Interview Questions
+<style>
+r { color: Crimson }
+o { color: Coral }
+y { color: Khaki }
+g { color: MediumSpringGreen }
+b { color: SkyBlue }
+i { color: Violet }
+h { color:  Plum }
+hh { color: Pink }
+</style>
+# <r>Interview Questions</r>
 
-## Explain your full-stack collaboration
+## <o>Explain your full-stack collaboration</o>
 
 * We came up with an idea for an application and the possible features we would like
 * We wireframed the basic user flow and styling for the application
@@ -16,12 +26,10 @@
 * It was a very enjoyable and collaborative experience
 
 
-## Why do you like creating documentation?
+## <o>Why do you like creating documentation?</o>
 
 * Allows me to stay organized
 * I can keep my documentation right in my IDE to easily access when needed
 * Helps to reinforce what I'm learning
 * Can make correlations to other topics
 * Have code/syntax examples
-
-
