@@ -11,13 +11,11 @@ l { color: Lemonchiffon}
 </style>
 
 # <h1 id='binary-search'><r>Binary Search</r></h1>
-
 * Is a search algorithm that finds the position of a target value within a sorted array
 * It is a divide and conquer algorithm that repeatedly splits the search space in half
 * Its time complexity is O(log n)
 
 ## <h2 id='table-of-contents'><o>Table of Contents</o></h2>
-
 * [<l>When to use</l>](#when-to-use)
 * [<l>Drawbacks</l>](#drawbacks)
 * [<l>How to use</l>](#how-to-use)
@@ -25,8 +23,8 @@ l { color: Lemonchiffon}
 * [<l>Examples</l>](#examples)
 
 ## <h2 id='when-to-use'><o>When to Use</o></h2>
+* When you need to find an element in a sorted array or list
 ### <y>Problems they are good for solving</y>
-
 * Searching for an index or element in a collection (array, linked list, etc.)
 * Finding an elements position in a sorted array
 
@@ -48,7 +46,6 @@ l { color: Lemonchiffon}
 [Back to Top](#table-of-contents)
 
 ## <h2 id='how-to-use'><o>How to Use</o></h2>
-
 * The key idea is to compare the search key with the middle element of the array or list
 * If the key is less than the middle element, the search continues in the lower half of the array or list
 * This process is repeated until the key is found or the search space is exhausted
@@ -65,7 +62,6 @@ l { color: Lemonchiffon}
     * If the target value is greater than the middle element, set the first index to the middle index plus 1
 4. <i>Repeat steps 2 and 3 until the target value is found or the search range is exhausted</i>
 ## <h2 id='terminology'><o>Terminology for Binary Search</o></h2>
-
 * <h>**Target**</h> - The value you are searching for
 * <h>**Index**</h> - The current location that you are searching
 * <h>**Left, Right**</h> - The indices from which we use to maintain our search Space
