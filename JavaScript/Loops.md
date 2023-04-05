@@ -19,8 +19,8 @@ hh { color: Pink }
 
 ## <o>While Loops</o>
 
-With a while loop, you can execute code repeatably as long as a certain condition is fulfilled.
-It is written with the `while` keyword followed by a condition wrapped in round brackets and a code block that contains the _body_ of the loop wrapped in curly brackets.
+* With a while loop, you can execute code repeatably as long as a certain condition is fulfilled.
+* It is written with the `while` keyword followed by a condition wrapped in round brackets and a code block that contains the _body_ of the loop wrapped in curly brackets.
 
 ```javascript
 while (condition) {
@@ -28,9 +28,9 @@ while (condition) {
 }
 ```
 
-JavaScript also has a <i>do-while loop</i>.
-Here the condition is checked after the loop body was executed.
-This is useful when the condition depends on evaluations done in the body.
+* JavaScript also has a <i>do-while loop</i>.
+* Here the condition is checked after the loop body was executed.
+* This is useful when the condition depends on evaluations done in the body.
 
 ```javascript
 do {
@@ -39,9 +39,9 @@ do {
 } while (condition);
 ```
 
-Inside a loop body, you can use the `break` keyword to stop the execution of the loop entirely.
-In contrast to this, the keyword `continue` only stops the execution of the current iteration and continues with the next one.
-With `continue` you can often avoid wrapping big parts of the loop body in an if-statement.
+* Inside a loop body, you can use the `break` keyword to stop the execution of the loop entirely.
+* In contrast to this, the keyword `continue` only stops the execution of the current iteration and continues with the next one.
+* With `continue` you can often avoid wrapping big parts of the loop body in an if-statement.
 
 ```javascript
 let i = 0;

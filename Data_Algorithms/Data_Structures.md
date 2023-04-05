@@ -21,9 +21,8 @@ hh { color: Pink }
 
 ## <o>Learn these three things about each data structure</o>
 
-* What is this data structure really good for?
+* What is this data structure really good for and when is it commonly used?
 * What are drawbacks to this data structure?
-* When/Where is the data structure most commonly used?
 
 ### <y>Array</y>
 

@@ -8,7 +8,7 @@ i { color: Violet }
 h { color:  Plum }
 hh { color: Pink }
 </style>>
-# <h1 <r>Algorithms</r>
+# <h1 id='algorithms'><r>Algorithms</r></h1>
 
 * Algorithms are a set of instructions to solve a problem.
 * Algorithmic thinking is the process of breaking down a problem into smaller problems.
@@ -18,7 +18,7 @@ hh { color: Pink }
 * [Greedy Approach](#greedy-approach)
 * [Quick Sort](#quick-sort)
 
-## <o>Types of Tech Challenges</o>
+## <h2 id='types-of-tech-challenges'><o>Types of Tech Challenges</o></h2>
 ### <y>Sorting</y>
 
 * Algorithms used for sorting data
@@ -33,7 +33,7 @@ hh { color: Pink }
 ### <y>Language Specific</y>
 
 ### <y>Optimization</y>
-#### <g>Greedy Approach</g>
+#### <h4 id='greedy-approach'><g>Greedy Approach</g></h4>
 
 * A common algorithmic technique used to solve optimization problems
 * It is a greedy algorithm because it makes the best choice at each step as it attempts to find the optimal solution.
@@ -67,7 +67,9 @@ hh { color: Pink }
   greedyApproach(coins, total); // [100, 50, 10, 5, 2, 1]
   ```
 
-#### <g>Quick Sort</g>
+[Back to Top](#algorithms)
+
+#### <h4 id='quick-sort'><g>Quick Sort</g></h4>
 
 * version of greedy approach
 * selects a pivot element
@@ -102,3 +104,5 @@ hh { color: Pink }
 
   quickSort([4, 2, 5, 1, 3]); // [1, 2, 3, 4, 5]
   ```
+
+[Back to Top](#algorithms)

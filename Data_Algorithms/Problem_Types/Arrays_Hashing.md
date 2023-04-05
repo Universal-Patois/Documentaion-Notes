@@ -7,24 +7,54 @@ b { color: SkyBlue }
 i { color: Violet }
 h { color:  Plum }
 hh { color: Pink }
+l { color: Lemonchiffon}
 </style>
 
-# <r>Arrays and Hashing</r>
-
-* Array and hashing problems are often used to sort and search data. They are also used to find duplicates and unique values.
-* Hashing is a technique to convert a range of key values into a range of indexes of an array.
+# <h1 id='arrays-hashing'><r>Arrays and Hashing</r></h1>
+* Hashing is a technique to convert a range of key values into a range of indexes of an array
+* It allows for fast access to data by generating a unique key or index for each item in a collection, based on its content
+* This makes it possible to retrieve data quickly, even from very large collections
 
 ## <o>Table of Contents</o>
-* [When to use](#when-to-use)
-* [Hash Map Method](#unique-sorting-with-caching)
-* [Caching with Memoization](#caching-with-memoization)
+* [<l>When to use</l>](#when-to-use)
+* [<l>Drawbacks</l>](#drawbacks)
+* [<l>How to Use</l>](#how-to-use)
+* [<l>Hash Map Method</l>](#unique-sorting-with-caching)
+* [<l>Caching with Memoization</l>](#caching-with-memoization)
 
-## <o>When to use</o>
-  * Find duplicates
-  * Find unique values
-  * Sort an array
+## <h2 id='when-to-use'><o>When to Use</o></h2>
+
+### <y>Problems they are good for solving</y>
   * Caching
+  * Sorting and searching data
+  * Find duplicates and unique values.
+  
+### <y>Most commonly seen in</y>
+* Data retrieval, storage, indexing, and manipulation
+* Searching, sorting, inserting, and and counting tasks
+* Situations where fast data access and manipulation is important
+    * Such as in a database or a search engine
 
+## <h2 id='drawbacks'><o>Drawbacks</o></h2>
+* <h>Arrays</h> can be inefficient when working with dynamic data that requires frequent resizing and deletion
+    * This can lead to memory fragmentation and poor performance
+* <h>Hashing</h> can be problematic in cases where collisions occur
+    * Collisions occur when multiple items generate the same key
+    * This can lead to slower access times and require additional processing to resolve
+    * This can be solved by using a <h>linked list</h> at each index to store multiple values
+### <y>Advantages</y>
+* <h>Hashing</h> is a very fast way to access data
+
+
+## <h2 id='how-to-use'><o>How to Use</o></h2>
+1. <i>**Create a hash table**</i>
+    * To store elements of an array as keys and their frequencies as values
+2. <i>**Iterate through the array**</i>
+    * For each element, check if it is already a key in the hash table
+    * If it is, increment its value by 1
+    * If it is not, add it to the hash table with a value of 1
+3. <i>**Check for duplicates**</i>
+4. <i>**Return the result**</i>
 ## <o>Hash Map Method</o>
   * Keeping track of things you have already seen (caching). When you see something, save it.
   * Then you can do a property lookup on an object (<h>*O(1)*</h> time complexity)
