@@ -63,30 +63,53 @@ l { color: Lemonchiffon}
     * If the stack is not empty, return false
     * This means that all the conditions were not meet with the problem
 
-### <y>Example</y>
+### <y>Examples</y>
 * Write a function that takes a string of parentheses, brackets, and curly braces as input and returns true if the parentheses are properly nested and false otherwise.
 ```javascript
-  function isValid(inputString) {
-    let stack = [];
-    for (let i = 0; i < inputString.length; i++) {
-        let char = inputString.charAt(i);
-        if (char === '(' || char === '[' || char === '{') {
-            stack.push(char);
-        } else if (char === ')' || char === ']' || char === '}') {
-            let lastChar = stack.pop();
-            if ((char === ')' && lastChar !== '(') ||
-                (char === ']' && lastChar !== '[') ||
-                (char === '}' && lastChar !== '{')) {
-                return false;
-            }
+  var isValid = function(s) {   
+    const stack = [];
+    const map = {
+      '(': ')',
+      '[': ']',
+      '{': '}'
+    }
+    
+    for (let i = 0 ; i < s.length ; i++) {
+        let c = s[i];
+        if (map[c]) {
+          stack.push(map[c])
+        } else if (c !== stack.pop()) {
+          return false;
+        } 
+    }
+    
+    return stack.length === 0;
+};
+```
+
+```javascript
+    var isValid = function(s) {   
+    const stack = [];
+    
+    for (let i = 0 ; i < s.length ; i++) {
+        let c = s.charAt(i);
+        switch(c) {
+            case '(': stack.push(')');
+                break;
+            case '[': stack.push(']');
+                break;
+            case '{': stack.push('}');
+                break;
+            default:
+                if (c !== stack.pop()) {
+                    return false;
+                }
         }
     }
-    if (stack.length === 0) {
-        return true;
-    } else {
-        return false;
-    }
-}
+    
+    return stack.length === 0;
+};
 ```
+
 
 [Back to Top](#table-of-contents)
