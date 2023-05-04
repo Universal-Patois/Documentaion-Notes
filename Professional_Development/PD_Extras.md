@@ -111,14 +111,3 @@ I didn’t do this for all the jobs I applied for and I wish I started doing thi
   * Ask if they can recommend someone you can connect with
 
 
-finisher- has eye for detail, everything is branded the right way
-
-make something easy 
-
-have a lot of power- help people on backend who don't understand design side as much
-
-being able to change behavior based on that
-
-speak with roy, do a reply all with isabella.
-
-send resume to ray- only child, pastor of a church, 

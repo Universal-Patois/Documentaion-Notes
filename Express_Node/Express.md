@@ -23,14 +23,15 @@ hh { color: Pink }
 * [File Structure](#file-structure)
 * [Using a Database with Mongoose](#using-a-database)
 * [Routes and Controllers](#routes-and-controllers)
+* [Using a Template Engine](#template-primer)
 
 
-## <o>What is Express?</o>
+## <h2 id="what-is-express"><o>What is Express?</o></h2>
 
 * Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 * Unopinionated: You can insert almost any compatible middleware you like into the request handling chain, in almost any order you like.
 
-## <o>What does Express do?</o>
+## <h2 id="what-does-express-do"><o>What does Express do?</o></h2>
 
 * Write handlers for requests with different HTTP verbs at different URL paths (routes)
 * Integrate with "view" rendering engines in order to generate responses by inserting data into templates
@@ -40,7 +41,7 @@ hh { color: Pink }
 
 [back to top](#express-notes)
 
-### <y>Simple example of an Express server</y>
+### <h2 id="simple-example-of-an-express-server"><y>Simple example of an Express server</y></h2>
 
 ```javascript
 // Import express
@@ -61,7 +62,7 @@ app.listen(port, function () {
   console.log(`Example app listening on port ${port}!`);
 });
 ```
-## <o>What is a middleware?</o>
+## <h2 id="what-is-a-middleware"><o>What is a middleware?</o></h2>
 
 * Middleware is a function that has access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle. The next middleware function is commonly denoted by a variable named next.
 * Middleware functions can perform the following tasks:
@@ -80,9 +81,9 @@ app.listen(port, function () {
 The <hh>**only**</hh> difference between a middleware function and a route handler callback is that middleware functions have a third argument ``next``, which middleware functions are expected to call if they are not that which completes the request cycle
 
 [back to top](#express-notes)
-## <o>Working with Express</o>
+## <h2 id="working-with-express"><o>Working with Express</o></h2>
 
-### <y>Importing modules</y>
+### <h2 id="importing-modules"><y>Importing modules</y></h2>
 
 * Importing modules is done with the ```require()``` function.
 * Specify the name of the module to import as a string ```require('express')```
@@ -91,7 +92,7 @@ The <hh>**only**</hh> difference between a middleware function and a route handl
 
 <hh> You can think of ```exports``` as a shortcut to ```module.exports``` </hh>
 
-### <y>Handling errors</y>
+### <h2 id="handling-errors"><y>Handling errors</y></h2>
 
 * Express provides a built-in error handler that prints stack traces to the console.
 * The middleware function takes in 4 arguments: ```err```, ```req```, ```res```, and ```next```
@@ -99,7 +100,7 @@ The <hh>**only**</hh> difference between a middleware function and a route handl
 
 <h>Note</h>: HTTP(404) and other errors are not treated as errors. You need to add a middleware function to handle them.
 
-### <y>Using databases</y>
+### <h2 id="using-databases"><y>Using databases</y></h2>
 
 * Express app can use any database mechanism that is supported by Node.js.
   * MySQL, MongoDB, PostgreSQL, SQLite, Redis, etc.
@@ -293,7 +294,7 @@ async function main() {
 
 [back to top](#express-notes)
 
-## <o>Routes and Controllers</o>
+## <h2 id="routes-and-controllers"><o>Routes and Controllers</o></h2>
 
 ### <y>Route Functions</y>
 
@@ -355,3 +356,117 @@ async function main() {
 * The named segments are prefixed with a colon ```:``` and then the name.
   * <h>*ex.*</h> ```/user/:userId/book/:bookId```
 * The names of route parameters must be made up of "word characters" ```[A-Z, a-z, 0-9, and _]```.
+
+``` javascript
+  app.get("/users/:userId/books/:bookId", function (req, res) {
+  // Access userId via: req.params.userId
+  // Access bookId via: req.params.bookId
+  res.send(req.params);
+});
+```
+
+#### <g> Handling Errors in the Route Functions</g>
+
+* ``next`` - Is a third parameter that called with the route functions.
+  * It can be used to pass errors to the Express middleware chain.
+  * <h>*ex.*</h>
+  ``` javascript
+    router.get("/about", (req, res, next) => {
+    About.find({}).exec((err, queryResults) => {
+      if (err) {
+        return next(err);
+      }
+      //Successful, so render
+      res.render("about_view", { title: "About", list: queryResults });
+    });
+    });
+    ```
+  * The framework is designed for use with asynchronous functions that take a callback function
+  * That's a problem because making Mongoose database queries that use Promise-based APIs
+  * Which may throw exceptions in our route functions (rather than returning errors in a callback)
+
+
+* The solution is to wrap the route function in a ```try/catch``` block
+  * <h>*ex.*</h>
+``` javascript
+// Import the module
+const asyncHandler = require('express-async-handler')
+
+exports.get("/about", asyncHandler(async (req, res, next) => {
+  const successfulResult = await About.find({}).exec();
+  res.render("about_view", { title: "About", list: successfulResult });
+}));
+```
+  * The ```asyncHandler``` function is a wrapper that will catch any errors thrown by the route function and pass them to ```next()```
+  * This prevents having to add ```try/catch``` blocks to every route function.
+``` javascript
+  exports.get("/about", function (req, res, next) {
+  try {
+    const successfulResult = await About.find({}).exec();
+    res.render("about_view", { title: "About", list: successfulResult });
+  }
+  catch (error) {
+    return next(error);
+  }
+};
+```
+
+[Back to top](#express-notes)
+
+## <h2 id="template-primer"><o>Template Primer</o></h2>
+
+* A template is a text file defining the structure or layout of an output file, with placeholders used to represent where data will be inserted when the template is rendered.
+* In Express, templates are referred to as views.
+
+### <y>Example Template File</y>
+
+* The following is an example of a template file that uses the Pug template engine.
+* Indentation is used to define nested elements
+* If a tag is followed by the equals sign, the following text is treated as a JavaScript expression (either defined in the file or passed into the template from Express).
+  * ```h1 ``` tag will be variable ```title```
+* If there is no equals symbol after the tag then the content is treated as plain text.
+* You can insert escaped and unescaped data using the ```#{}``` and !```{}``` syntax respectively.
+* You can use the pipe ```('|')``` character at the beginning of a line to indicate "plain text".
+* Pug allows you to perform conditional operations using ```if```, ```else```, ```else if``` and ```unless```.
+* You can also perform loop/iteration operations using ```each-in``` or ```while``` syntax.
+
+``` html
+doctype html
+html(lang="en")
+  head
+    title= title
+    script(type='text/javascript').
+  body
+    h1= title
+
+    p This is a line with #[em some emphasis] and #[strong strong text] markup.
+    p This line has un-escaped data: !{'<em> is emphasized</em>'} and escaped data: #{'<em> is not emphasized</em>'}.
+      | This line follows on.
+    p= 'Evaluated and <em>escaped expression</em>:' + title
+
+    <!-- You can add HTML comments directly -->
+    // You can add single line JavaScript comments and they are generated to HTML comments
+    //- Introducing a single line JavaScript comment with "//-" ensures the comment isn't rendered to HTML
+
+    p A line with a link
+      a(href='/catalog/authors') Some link text
+      |  and some extra text.
+
+    #container.col
+      if title
+        p A variable named "title" exists.
+      else
+        p A variable named "title" does not exist.
+      p.
+        Pug is a terse and simple template language with a
+        strong focus on performance and powerful features.
+
+    h2 Generate a list
+
+    ul
+      each val in [1, 2, 3, 4, 5]
+        li= val
+```
+
+The values of all attributes are escaped (e.g. characters like ">" are converted to their HTML code equivalents like "&gt;") to prevent JavaScript injection or cross-site scripting attacks.
+
