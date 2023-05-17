@@ -115,3 +115,14 @@ console.log(stack.pop()); // null
 ```
 
 [Back to Top](#table-of-contents)
+
+### <y>Example</y>
+
+* Given the head of a slightly linked list, reverse that list, and return the reversed list
+
+#### <g>Iterative Solution</g>
+```javascript
+  let reverseList = function(head) {
+    let previous = null;
+    let current = head;
+    while

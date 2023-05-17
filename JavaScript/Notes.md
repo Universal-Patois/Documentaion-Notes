@@ -15,6 +15,7 @@ hh { color: Pink }
 
 * [Comparison Operators](#comparison-operators)
 * [Escape Sequences](#escape-sequences)
+* [File Path Syntax](#file-path-syntax)
 ## <o>Comparison Operators</o>
 In JavaScript, the comparison operators above can also be used to compare strings.
 In that case, a dictionary (lexicographical) order is applied.
@@ -83,3 +84,9 @@ The following table shows the escape sequences and what they do:
 
 * <h>***Space***</h>: The space escape sequence adds a space to the string.
 
+
+## File Path Syntax
+
+The .. syntax means "go up one level in the directory tree".
+So, ../../ means "go up two levels in the directory tree", which brings you to the root directory of your project.
+From there, you can reference the assets directory and the logo.png file using the path assets/logo.png.
