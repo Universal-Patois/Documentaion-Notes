@@ -33,3 +33,11 @@ hh { color: Pink }
 * Helps to reinforce what I'm learning
 * Can make correlations to other topics
 * Have code/syntax examples
+
+## <o>What are you looking for in your career?</o>
+
+
+## <o>How did you get into tech?</o>
+
+
+

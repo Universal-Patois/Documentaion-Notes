@@ -111,3 +111,138 @@ I didn’t do this for all the jobs I applied for and I wish I started doing thi
   * Ask if they can recommend someone you can connect with
 
 
+### Alcesia Linkedin Tips
+
+* Banner Photo more professional
+* Profile pick with a background
+* One year of expereience
+
+* Recommendations - friends, teachers
+
+* One course a week on linkedin learning
+
+* Put 50 skills
+* Endorse skills (up to 99)
+
+* Daily adding people (from recruiting agencies)
+* Refer.me
+
+* Early career enginner search 2x a day
+* Associate software engineer
+* apprenticeship
+* junior software engineer
+* entry level software engineer
+
+apply
+find hiring manager and recruiter
+send a reach out that ends with a call to action
+
+keep it short
+always attach resume
+try to find their email
+
+
+why are you interested in this job? show them
+
+are there trends in what 
+
+having an actual interest in contacting them will make it feel better/more authentic
+
+what resources did you use to get to this point?
+some sort of notation to relocation - tarageting specific areas
+
+treat the work as a vocational program - worked under project managaer, worked with 10 people
+
+use AI to create experience - coming from vocational lense
+
+note that its a school but highlight expereicne
+
+what are the tihngs you are interested in
+
+put turing as experience and write see about for projects and collaboration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Which of the following three activities would you like to do the MOST at work?
+
+install security systems
+desigin new clothing line
+
+train new employees
+write short stories
+
+
+draw pictures
+fix a broken faucet
+
+
+invent a new type of battery
+organize and file buisness documents
+
+
+study weather conditions
+study animal behavior
+
+
+paint houses
+sell houses
+
+
+develop a new medical procedure
+teach people with disabilities work and living skills
+
+
+study ways to reduce water pollution
+keep shipping and receiving records
+
+
+use a word processor to edit and format documents
+driving a truck and delivering packages
+
+
+load computer software into a large computer network
+compute and record statistical and other numerical data
+
+
+take notes during a meeting
+conduct biological research
+
+
+perform office filling tasks
+negotiate buisness conflicts
+
+
+teach an individual an exercise routine
+perform nursing duties in a hospital
+
+
+transfer funds between using a computer
+schedule conferences for an organization
+
+
+write scripts for movies or television shows
+test the quality of parts before shipment
+
+
+help people with personal or emotional problems
+take care of children at a day care center
+
+
+keep records of financial transactions for an organization
+teach sign language to people with hearing disabilities
+
+
+develop psychological profiles of criminals
+examine blood samples using a microscope
+
