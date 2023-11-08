@@ -39,7 +39,7 @@ l { color: Lemonchiffon}
   | *[Find the intersection of two sorted arrays](#find-the-intersection-of-two-sorted-arrays)* |
   | *[Find the smallest subarray in a given array that has a given sum](#find-the-smallest-subarray-in-a-given-array-that-has-a-given-sum)* |
   | *[Find the maximum sum of a subarray of a given array](#find-the-maximum-sum-of-a-subarray-of-a-given-array)* |
-## <o>When to use<o/>
+## <o id='when-to-use'>When to use<o/>
 
 The two pointer technique is a useful and versatile algorithmic pattern that can be applied to a wide range of problems, particularly those involving ```arrays``` and ```linked lists```
 
@@ -68,7 +68,7 @@ The two pointer technique is a useful and versatile algorithmic pattern that can
     * Such as finding pairs of elements that add up to a certain value or finding the longest substring without repeating characters
 ## <h2 id='how-to-use'><o>How to Use</o></h2>
 1. <i>**Identify the problem**</i>
-    * Identify that th problem can be solved using the two-pointer technique
+    * Identify that the problem can be solved using the two-pointer technique
 2. <i>**Identify the pointers**</i>
     * Initialize two pointers, typically called <h>left</h> and <h>right</h>, at the beginning and end of the array or string
 3. <i>**Set Conditions**</i>
@@ -215,6 +215,20 @@ const targetSum = 7;
 
 const pairs = findPairs(array, targetSum);
 console.log(pairs); // [[4, 3], [2, 5], [-1, 8], [1, 6]]
+```
+
+```javascript
+var twoSum = function (nums, target) {
+    let disct = {};
+    for (let i = 0; i < nums.length; i++) {
+        let rest = target - nums[i];
+        if (disct[rest] || disct[rest] === 0) {
+            return [disct[rest], i];
+        }
+        disct[nums[i]] = i;
+
+    }
+};
 ```
 
 [Back to Top](#table-of-contents)

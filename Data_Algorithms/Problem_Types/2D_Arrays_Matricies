@@ -1,0 +1,13 @@
+<style>
+r { color: Crimson }
+o { color: Coral }
+y { color: Khaki }
+g { color: MediumSpringGreen }
+b { color: SkyBlue }
+i { color: Violet }
+h { color:  Plum }
+hh { color: Pink }
+l { color: Lemonchiffon}
+</style>
+
+<h1 id="2D_Arrays_Matricies">2D Arrays/Matricies</h1>

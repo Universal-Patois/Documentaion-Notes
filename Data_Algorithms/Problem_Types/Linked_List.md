@@ -13,6 +13,9 @@ l { color: Lemonchiffon}
 # <r>Linked List</r>
 
 * A linked list is a linear data structure that stores data in nodes
+* Each node in a singly linked list contains two pieces of information
+  * The data value (or payload) of the node
+  * A reference to the next node in the sequence
 
 ## <h2 id='table-of-contents'><o>Table of Contents</o></h2>
 * [<l>When to use</l>](#when-to-use)
@@ -125,4 +128,15 @@ console.log(stack.pop()); // null
   let reverseList = function(head) {
     let previous = null;
     let current = head;
-    while
+    while (current !== null) {
+    const nextNode = current.next;
+    current.next = previous;
+    previous = current;
+    current = nextNode;
+  }
+
+  return previous;
+}
+```
+
+Note that in JavaScript, we don't explicitly define a class for the linked list nodes. Instead, we assume that each node is an object with a next property to store the reference to the next node, and possibly a value property to store the value of the node.
