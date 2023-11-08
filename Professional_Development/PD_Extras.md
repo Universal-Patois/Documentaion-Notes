@@ -132,6 +132,8 @@ I didn’t do this for all the jobs I applied for and I wish I started doing thi
 * apprenticeship
 * junior software engineer
 * entry level software engineer
+* Customer support engineer
+* Software Developer in Test
 
 apply
 find hiring manager and recruiter
