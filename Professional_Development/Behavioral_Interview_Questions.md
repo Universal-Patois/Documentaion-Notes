@@ -10,88 +10,40 @@ hh { color: Pink }
 </style>
 # <r>Interview Questions</r>
 
-## <o>Explain your full-stack collaboration</o>
 
-* We came up with an idea for an application and the possible features we would like
-* We wireframed the basic user flow and styling for the application
-* Our new technology was GraphQL. So we spent time learning that
-* We established our working relationship where we shared how each of us worked best, the times we liked to work, and availability
-* We discussed the information we wanted presented to the user from google maps API
-* We then picked features we wanted for a MVP
-* We also had features we wanted to add if we had the time
-* Back-end set up endpoints for us to use for querying the information
-* We me every morning for stand ups where each of us talked about what we wanted to accomplish for the day and what we had done the day before
-* Once the MVP was met we discussed what else we wanted to add given the time we had left
-* We all communicated through slack so when the front-end needed something we would reach out to the back-end to let them know
-* It was a very enjoyable and collaborative experience
+## <o>What is your greatest strength?</o>
 
+## <o>Tell me about a time you worked effectively under pressure</o>
 
-## <o>Why do you like creating documentation?</o>
+* While I was studying in my program to learn software development we were often given projects with a short time frame to complete them. Often we would be given the task of creating an application within 5 days while also continuing to attend class everyday. As well, we were often required to self teach and successfully implement new technologies into our projects.  
+* I found that I worked best when I broke the project down into smaller pieces and focused on one piece at a time. This would mean working through a project iteratively. I would start with the basic functionality and then add features as I went along.
+* I would also make sure to take breaks often, usually with the pomodoro method, to clear my head and come back to the project with a fresh perspective.
+* Often these project were collaborative so I found it helpful to delegate certain tasks to other members of the group. For example, our first project in React  This allowed us to work more efficiently and get more done in a shorter amount of time.
 
-* Allows me to stay organized
-* I can keep my documentation right in my IDE to easily access when needed
-* Helps to reinforce what I'm learning
-* Can make correlations to other topics
-* Have code/syntax examples
+## <o>How do you handle challenges?</o>
 
-## <o>What are you looking for in your career?</o>
+* When given something that is challenging, no matter what it is, I like take a second to step back and breathe
+* Depending on the task I will rework the challenge through my head and work to see or explain it in a different way. This helps to give insight to solutions I may not have seen before
+* I will break the challenge down into smaller pieces and work through each piece one at a time. Often while working on the first part or step I will see the solution to the next part
+* I also like to talk through the challenge with someone else. If I am unable to make progress on a challenge I will reach out to a friend or colleague to see if they can offer insight. Often the process of explaining the challenge to someone else will help me to see the solution
+* I like to take breaks when working on something challenging to give my mind rest. Stopping to take a walk or do something else for a bit will help me to come back to the challenge with a fresh perspective
 
-* Looking to continue to learn and grow as a developer and work at a place that supports that
-  * This could look like deepening my knowledge of front-ent development while getting more experience with back-end
-  * Eventually taking on responsibilities in a full-stack role
-  * Becoming a Senior Developer where I have the opportunity to teach others and give back support I have received while becoming a developer
-* Looking for a place that has a good work/life balance
-* Looking for a place that has a good culture and is supportive of their employees
+## <o>Have you ever made a mistake? How did you handle it?</o>
+* I have made many mistakes in my life. I think it is important to make mistakes and learn from them.
+* My perspective is that its okay to make mistakes but the important thing is to be honest, communicate your mistake to others, work to fix it and learn from the experience so you don't make the same mistake again.
+* One mistake I made was when I was working on a project in my program. I was creating an application that would allow users to search for a movie from an API. We were supposed to test the application and account for all possible error handling to prevent bugs. When my instructor was testing my application he was able to break it by typing in a junk subdirectory in the url. I had not accounted for this in my code and it caused the application to break. I was able to fix the issue by adding a catch all route to my code. This would redirect the user to the home page if they typed in a junk subdirectory. I learned from this experience to always test my code thoroughly and account for all possible scenarios.
 
-## <o>How did you get into tech?</o>
+## <o>What is your greatest weakness?</o>
+* I have a tendency to be work too much. Even though I give myself breaks often when I am programming I get so focused on the task that it is hard for me to stop working on that task until it is finished. This can mean sometimes skipping lunch because I am so determined 
+* I have found that breaking down even small tasks into little steps helps me set a point where I can stop working without overdoing it. 
 
-* I spent a lot of my early 20's traveling and living around the world doing different jobs
-* While living in Hawaii my roommate used to work as a fisherman in Alaska.
-* I liked how challenging the work sounded and decided to give it a try
-* I worked on a fishing boat in Alaska for 5 years
-* I enjoyed the environment there and the unique daily challenges
-* But after 5 years I felt I had hit a wall and there was no more room for growth
-* I wanted a career that was mentally stimulating. One that had lots of room for growth, learning, and advancement
-* While taking Spanish lessons a friend in my class was starting a course on front-end development
-* I knew very little about programming before but after taking a try coding class with the school
-* I realized this career path would check off all of the boxes I was looking for
-  * Constant learning and implementing new technologies is basically a requirement of the job
-  * There was potential to branch out and learn other disciplines to incorporate into my work (Data Scientist, Back-end development)
-  * Having opportunity for upwards advancement into higher roles
-  * Allows me to create something and contribute to a product I can be proud of
-  * Software development is a way to help people that has the ability to reach more people than I would have as a therapist
+## <o> Give an example of a time you worked on a team</o>
+* For my capstone project in my program we were given the task of creating a full-stack application in 2 weeks. As part of the front-end program we were paired with students from the back-end program to work on the project together.
+* We started by coming up with an idea for an application and the possible features we would like to add
+* Then we went through and chose which features we thought we would be able to add successfully in the time frame we had and which features we would like to add if we had the time
+* We then wireframed the basic user flow and styling for the application
+* Each day we would meet for stand ups where we would talk about what we had accomplished the day before and what we wanted to accomplish for the day. Often bringing up any blockers we had any working through them as a group
+* Throughout the day we communicated through slack. If the front-end needed something from the back-end we would reach out to them and let them know and vice versa
+* We also set up a project board on github to keep track of what we had accomplished and what we still needed to do. Noting any issues or bugs we came across
 
-## <o>Tell Me About Yourself</o>
-
-* I am someone who loves to learn new things and have new experiences
-  * From learning to identify birds or play tennis to high altitude mountain hiking or riding in a boat through 40ft waves
-  * This is also reflected in wanting to understand how certain algorithms work and when to use them. Or reading through the documentation of a new technology Vue to see how it works
-* I really enjoy facing and overcoming challenges
-  * Doing strenuous 10 day hikes to working 16 hours daily for months at time
-  * Completing a software development program that required 60+ hours a week and constant and proper implementation of the knowledge
-* As well, I have a strong desire to make a positive impact in the world
-  * Whether is be from doing stream cleanups to ensure the health of the Chesapeake Bay
-  * To volunteering to do yard work for the older people in my neighborhood
-  * Helping to mentor some of the new students at Turing through their first module
-* I value accountability and communication
-  * I hold myself to a high standard and make sure I do something if I say I'm going to do it
-* I really enjoy collaboratively working as part of a team
-  * Working with someone else to implement a solution or come up with ideas
-* 
-* I enjoy feedback and like to use that feedback to continue to grow
-
-
-/*
-I'm a software developer who thrives on continuous learning and new experiences. Whether it's exploring nature by identifying birds or pushing my limits through challenging hikes, I love expanding my horizons. This curiosity extends to my passion for understanding algorithms and exploring new technologies like Vue through documentation.
-
-I embrace challenges and have a track record of overcoming them, from enduring strenuous 10-day hikes to dedicating long hours in intense software development programs. I believe in making a positive impact on the world, whether it's by participating in environmental initiatives like stream cleanups or lending a hand to older members of my community. As a mentor at Turing, I've had the opportunity to guide and support new students through their initial module.
-
-Accountability and effective communication are values I hold dear. I take responsibility for my commitments, ensuring that I follow through on what I say. Collaboration is another aspect I thrive on, relishing the opportunity to work closely with others to implement innovative solutions.
-
-Lastly, feedback is essential for my growth. I actively seek and appreciate constructive feedback, using it as fuel to continually improve. With my love for learning, determination to overcome challenges, desire to make a positive impact, commitment to accountability and communication, and passion for collaborative teamwork, I believe I would be a valuable addition to your software development team."
-*/
-
-
-
-
-
+## <o>

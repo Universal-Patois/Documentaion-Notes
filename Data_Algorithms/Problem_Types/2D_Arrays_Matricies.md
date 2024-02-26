@@ -113,6 +113,9 @@ Given a square matrix, calculate the absolute difference between the sums of its
 function diagonalDifference(arr) {
   // Step 1: Create the Matrix
   const n = arr.length;
+
+  // If the arr is an array of string numbers.
+  // If not this step can be skipped
   const matrix = arr.map(row => row.split(' ').map(Number));
 
   // Step 2: Calculate Diagonal Sums

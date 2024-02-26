@@ -8,71 +8,87 @@ i { color: Violet }
 h { color:  Plum }
 hh { color: Pink }
 </style>
-# Netlify
 
-## Why do I feel technology should be accessible to everyone?
+# <r>PHEAA</r>
 
-* I believe that technology should be accessible to everyone because it is a tool that can be used to help people in many ways.
-* It has helped me in many ways like organization, communication, and productivity.
-* It has helped me connect with others in ways that I would not have been able to otherwise.
+## <o>Example of building an application from provided specifications</o>
+* In my program half of the time we were given projects to complete with specific requirements 
+* They would be instructions on the specific type of application and what features it should have
+* It would also include a list of technologies we were required to use and had iterations of the project we were supposed to follow
 
-* Providing customers support would achieve this goal by:
-  * helping them to understand how to use the product
-  * empowering them to use the product on their own and to its full potential
-  * Once they understand how to use the product, they can use it to help themselves and others.
+## <o>Time when you developed unit tests and code coverage</o>
+* In my current role my job was to create a testing plan for our application and execute it. I created a test plan that included unit tests for our back-end code and web scrapping files as well as end-to-end testing for our front-end. I used Jest for the unit tests and Cypress for the end-to-end tests.
+* I was able to get 95% code coverage for the application
+* We are still working on some of the testing right now. One of the things we are trying to do is set up a test database to run our tests on. This would allow us to test our database queries without affecting the production database. We are also working on setting up a CI/CD pipeline to run our tests automatically when we push to github.
+
+## <o>Have you done code reviews?</o>
+* This is something that I have implemented in my current role. 
+* We have a pull request template that I created to make sure all of the necessary information is included in the pull request
+* This also includes a checklist that we use to make sure we have tested the code and that it meets our standards
+* For each pull request the developer will assign a reviewer before the PR is able to be merged.
+* This reviewer is often me and I make sure to go through to code to ensure it is clean and readable and contains any comments for parts that may be confusing
 
 
-## My passion for helping others
+## <o>How do you write/keep track of your documentation?</o>
+* I start with using version control like git and github to keep track of my code and changes
+* While developing I will make atomic commits that are small and focused on one specific change
+* If there are parts of the code I think are confusing I will add comments to explain what is happening
+* Within the commit message I will include a brief description of the change
+* With that in mind I like to keep the branch Im working on focused to one specific feature or task to avoid scope creep
+* This way when a PR is made it is easy to look through the commits to see what changes were made
+* I also like to use a project board to keep track of my tasks and what I have completed
+* When working on a project I will create a README file that includes 
+    * A description of the application
+    * A list of technologies used
+    * Instructions on how to set up and use the application locally
+    * A deployed link to the application once the application is finished
+    * A link to the deployed application once finished
+    * Screenshots of the application
+    * Database schemas
 
-* I have always been passionate about helping others.
-* I was a psychology major in college and I have always been interested in how people think and how they can be helped.
 
-Examples of how I have helped others in resolving a technical issue:
+## <o>How do you keep track of your tasks?</o>
+* I use a project board on github separated by columns for either front-end, back-end, UX/UI, Web Scraping, Bugs, and Done
+* I will create issues for each task I need to complete and assign them to myself or another developer
+* For each stage we will have a different project board with the tasks we need to complete for that stage
 
-* As mentor to students in the front end program that were in a lower module
-  * Help them when learning iterator methods
-    * Like how with ```map()```  you could not only use it to map over and array to manipulate it but also use it to return an object with key value pairs that you defined
-  * Having trouble with their project trying to fetch data from an API and display it
-    * Helped them work through the problem in steps
-      * What error are you getting?
-      * How is the data being returned from the API?
-      * How can you access the data you want?
+## <o>Have you provided support for an application you developed?</o>
+* In my current role I am the main developer for our application
+* When a new developer is brought on I have taken the responsibility of onboarding them and getting them up to speed on the application
+* As well if any of the other developers have questions about the application or they have any issues I am the one they come to for help
 
-        * It felt really good to help them work through the problem and see them get excited when they figured it out.
-        * Now that I had helped them with the process of working through the problem, they were able to do it on their own
-
-## What I like about Netlifys support values
-
-* It focused on making the information to help the customer easier to understand and more accessible.
-  * I enjoy making documentation that is layed out neatly and is easily accessible.
-* Showcasing their success with things like site of the week
-* The main focus seemed to be on having empathy for the customer and their experience with the product.
-  * By understanding their experience with the product, you can better help them to understand how to use it and how to get the most out of it.
-  * By being empathic and understanding it not only helps them but it helps the company by retaining the customer and having them be a brand ambassador.
-  * By lifting them up we are lifting up the company.
-
-## About me
-
-Ive always been an empathic person. It feels good to help someone
-I got into psychology because I wanted to help others. But I didnt pursue it because I didnt want to go to grad school and take on more debt.
-
-I then traveled a lot and found the fishing industry. It was a unique experience that was challenging and enjoyable at times.
-
-But I didnt just want a job that made me money. I wanted one that I could continue to learn new things and apply them to something I could help create and be a part of.
-
-I discovered coding and really enjoyed the problem solving aspect of it. And that there is such a depth of information to learn for almost every topic.
-But also I realized that programming is really just a way to help others with technology.
-And that by working with products that are used by others,I can help make a difference in their lives and reach more people than I ever could with psychology
-
-## what are you looking for in the future
-
-* I want to continue to deepen my skills as a front end developer while also learning more about the back end and incorporating that knowledge.
-* I eventually want to work in a full stack role. I really enjoy learning how both the front and back end technologies work together.
-  * I enjoy writing quality code that is thoroughly tested and documented, is accessible, meets seo, and is optimized for performance.
-* My goal for even further down the line is to work as a product manager
-  * I want to be able to design a product that is optimized based on the clients needs
-  * Understand how to write scalable code that is easy to maintain and update, that meets time and space complexity requirements
+## <o>Why do you want to leave your current job?</o>
+* My goal has been to work in the non-profit sector. Right now my company creates software and websites for people and retailers in various industries. 
+* I wanted to work for a company that was more aligned with my values and goals. I am looking for a company that is more focused on helping people and making a difference in the world
+* Its a startup and I am looking for a more stable environment with better structure
 
 
 
+# <r>Questions for them</r>
 
+* How big is the team
+* What is the team structure
+* What would a typical day look like
+* What technologies do you use
+* Dress code
+* When are you looking to fill the position/ when would the first day be
+* Where are you located exactly
+* What does the onboarding process look like
+* When can I expect to hear back from you
+* What is the next step in the process
+* To make the onboarding process easier what can I do over the weekend to s
+
+
+# <r>Skills</r>
+
+## <o>.NET</o>
+
+## <o>SQL</o>
+
+## <o>SDLC</o>
+
+## <o>M365 Tools</o>
+
+## <o>Web Services</o>
+
+## <o>COTS Applications</o>

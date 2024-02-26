@@ -21,6 +21,11 @@ hh { color: Pink }
 
   - <h>REST</h> is an architectural style for distributed hypermedia systems such as the World Wide Web. REST is a software architectural style that defines a set of constraints to be used for creating Web services. Web services that conform to the REST architectural style, called RESTful Web services, provide interoperability between computer systems on the Internet. RESTful Web services allow the requesting systems to access and manipulate textual representations of Web resources by using a uniform and predefined set of stateless operations.
 
+## <o>SOAP</o>
+<i>**Simple Object Access Protocol**</i>
+
+  - <h>SOAP</h> is a messaging protocol specification for exchanging structured information in the implementation of web services in computer networks. Its purpose is to provide extensibility, neutrality, verbosity and independence. It uses XML Information Set for its message format, and relies on application layer protocols, most often Hypertext Transfer Protocol (HTTP) or Simple Mail Transfer Protocol (SMTP), for message negotiation and transmission.
+  
 ## <o>API</o>
 
 <i>**Application Programming Interface**</i>
@@ -73,3 +78,15 @@ hh { color: Pink }
 ## <o>OMD/ORM</o>
 
 <i>**Object Data Model/ Object Relational Model**</i>
+
+## <o>JSON</o>
+<i>**JavaScript Object Notation**</i>
+
+  * <h>JSON</h> is an open-standard file format that uses human-readable text to transmit data objects consisting of attribute–value pairs and array data types (or any other serializable value). It is a very common data format used for asynchronous browser–server communication, including as a replacement for XML in some AJAX-style systems. JSON is a language-independent data format. It was derived from JavaScript, but many modern programming languages include code to generate and parse JSON-format data. The official Internet media type for JSON is application/json. JSON filenames use the extension .json. 
+
+## <o>SQL</o>
+<i>**Structured Query Language**</i>
+
+  * <h>SQL</h> is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). It is particularly useful in handling structured data, i.e. data incorporating relations among entities and variables. SQL offers two main advantages over older read–write APIs such as ISAM or VSAM. Firstly, it introduced the concept of accessing many records with one single command. Secondly, it eliminates the need to specify how to reach a record, e.g. with or without an index.
+
+#

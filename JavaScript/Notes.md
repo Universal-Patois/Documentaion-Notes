@@ -34,6 +34,80 @@ You can find a list of the exact order of all the characters [here][https://en.w
 // => false
 ```
 
+## <h2 id='equality-comparisons'><o>Equality Comparisons</o></h2>
+* <p>=== (strict equality operator)</p>
+* <p>== (loose equality operator)</p>
+* <p>Object.is()</p>
+
+### <y>Strict Equality Operator (===)</y>
+* Strict equality compares two values for equality
+* Neither value is implicitly converted to some other value before being compared
+* If the values have different types, the values are considered unequal
+* Strict equality is almost always the correct comparison operation to use.
+* For all values except numbers, it uses the obvious semantics: a value is only equal to itself
+
+```javascript
+const num = 0;
+const obj = new String("0");
+const str = "0";
+
+console.log(num === num); // true
+console.log(obj === obj); // true
+console.log(str === str); // true
+
+console.log(num === obj); // false
+console.log(num === str); // false
+console.log(obj === str); // false
+console.log(null === undefined); // false
+console.log(obj === null); // false
+console.log(obj === undefined); // false
+```
+
+### <y>Loose Equality Operator (==)</y>
+* The loose equality operator compares two values for equality, after converting both values to a common type
+* After conversions (one or both sides may undergo conversions), the final equality comparison is performed exactly as === performs it
+* Loose equality is symmetric: A == B always has identical semantics to B == A for any values of A and B (except for the order of applied conversions)
+* Loose equality is almost always the wrong comparison operation to use
+*The result of a comparison using strict equality is easier to predict, and may evaluate more quickly due to the lack of type coercion.
+
+```javascript
+const num = 0;
+const big = 0n;
+const str = "0";
+const obj = new String("0");
+
+console.log(num == str); // true
+console.log(big == num); // true
+console.log(str == big); // true
+
+console.log(num == obj); // true
+console.log(big == obj); // true
+console.log(str == obj); // true
+```
+
+### <y>Object.is()</y>
+* The Object.is() method determines whether two values are the same value
+* Useful when specific handling of NaN or +0/-0 is needed.
+* Provides an alternative to === with different behavior for certain edge cases.
+* Treats NaN as equal to NaN, which is different from ===
+* Treats +0 and -0 as not equal, unlike ===
+
+```javascript
+// === (strict equality operator)
+console.log(1 === 1);         // true
+console.log('1' === 1);       // false (different types)
+console.log(NaN === NaN);     // false
+console.log(+0 === -0);       // true
+
+// Object.is()
+console.log(Object.is(1, 1));     // true
+console.log(Object.is('1', 1));   // false (different types)
+console.log(Object.is(NaN, NaN)); // true
+console.log(Object.is(+0, -0));   // false
+```
+ [<h>More on Equality Comparisons</h>](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
+
+[back to top](#table-of-contents)
 ## <h2 id='escape-sequences'><o>Escape Sequences</o></h2>
 
 In JavaScript, there are some special characters that are not allowed in strings.

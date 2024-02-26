@@ -8,7 +8,7 @@ i { color: Violet }
 h { color:  Plum }
 hh { color: Pink }
 l { color: Lemonchiffon}
-</style>6
+</style>
 
 # <h1 id='binary-search'><r>Binary Search</r></h1>
 * Is a search algorithm that finds the position of a target value within a sorted array
