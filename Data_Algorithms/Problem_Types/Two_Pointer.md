@@ -297,6 +297,8 @@ const newLength = removeDuplicates(nums);
 console.log(nums.slice(0, newLength)); // Output: [1, 2, 3, 4, 5]
 ```
 
+Aside from the two pointer approach, you can also use the `Set` and `Spread Operator` or `Filter Method` to remove duplicates from a sorted array. Check [here](../../JavaScript/Functions.md) for more information.
+
 [Back to Top](#table-of-contents)
 ### <h3 id='check-if-a-string-is-a-palindrome'><y>Check if a string is a palindrome</y></h3>
 #### <g>Example</g>

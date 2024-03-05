@@ -118,6 +118,12 @@ l { color: Lemonchiffon}
 * Although the CSS styles are shared globally, each class is singularly applied to each element.
     * This means if you add or delete an element, you don't have to worry about maintaining separate stylesheets, style collisions, or the size of your CSS bundle growing as your application scales.
 
+#### <g>Example</g>
+```tsx
+<h1 className="text-blue-500">I'm blue!</h1>
+```
+    * In this example, the text color of the h1 element is set to blue using the Tailwind CSS class text-blue-500.
+
 [More on Tailwind CSS](https://tailwindcss.com/)
 
 ### <y>CSS Modules</y>
@@ -151,4 +157,6 @@ export default function InvoiceStatus({ status }: { status: string }) {
     * If it's 'paid', you want the color to be green. If it's 'pending', you want the color to be gray.
 
 [Back to Top](#next-13)
+
+## <h2 id='optimization'><o>Optimization</o></h2>
 

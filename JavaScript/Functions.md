@@ -7,17 +7,20 @@ b { color: SkyBlue }
 i { color: Violet }
 h { color:  Plum }
 hh { color: Pink }
+l { color: Lemonchiffon}
 </style>
-# <r>Reusable functions</r>
+
+# <h1 id="reusable-functions"><r>Reusable Functions</r></h1>
 
 * Various functions that can be used for different purposes.
 
-## <o>Table of Contents</o>
+## <h2 id="table-of-contents"><o>Table of Contents</o></h2>
 
-* [Format Number Function](#format-number-function)
-* [Remove all non-alphanumeric characters from a string](#remove-all-non-alphanumeric-characters-from-a-string)
+* [<l>Format Number Function</l>](#format-number-function)
+* [<l>Remove All Non-alphanumeric Characters From a String</l>](#remove-all-non-alphanumeric-characters-from-a-string)
+* [<l>Remove Duplicates From an Array</l>](#remove-duplicates-from-an-array)
 
-## <o>Format Number Function</o>
+## <h2 id="format-number-function"><o>Format Number Function</o></h2>
 
 ```js
 function formatNumber(num) {
@@ -51,7 +54,9 @@ See the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScr
 
 See notes in Regex section [Negative Lookarounds](../Regex/Lookarounds.md#negative-lookaheadlookbehind) for more information on negative lookahead's.
 
-## <o>Remove all non-alphanumeric characters from a string</o>
+[Back to Top](#table-of-contents)
+
+## <h2 id="remove-all-non-alphanumeric-characters-from-a-string"><o>Remove All Non-alphanumeric Characters From a String</o>
 
 ```javascript
 const str = 'Hello, World!';
@@ -80,3 +85,61 @@ function isEven(num) {
 
 * The `%` symbol is the modulus operator, which gives you the remainder of the division between `num` and `2`
 * If `num` is an even number, the remainder of num divided by `2` will always be `0`
+
+[Back to Top](#table-of-contents)
+
+## <h2 id="remove-duplicates-from-an-array"><o>Remove Duplicates From an Array</o>
+* This can be attempted with a [two pointer approach](../Data_Algorithms/Problem_Types/Two_Pointer.md). But can also be done with a set and spread operator or filter method.
+
+### <y>Set and Spread Operator</y>
+* The Set constructor creates a new Set object. A Set is a collection of values, where each value may occur only once.
+* Here the set is used to remove duplicates from the array.
+* The numbers are spliced from the array parameter and replaced with the spread operator of the set.
+
+#### <g>Example</g>
+```javascript
+function removeDuplicates(nums: number[]): number {
+    const withoutDuplicates = new Set(nums)
+    nums.splice(0, nums.length, ...withoutDuplicates)
+    return nums
+```
+
+### <y>Filter Method</y>
+* The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+* Here the filter method uses a callback function to check if the index of the current element is equal to the first index of the element in the array.
+
+#### <g>Example</g>
+```javascript
+function removeDuplicates(nums: number[]): number {
+    return nums.filter((num, index) => nums.indexOf(num) === index)
+}
+```
+
+### <y>While Loop</y>
+* The while loop is used to iterate through the array and check if the current element is equal to the next element.
+* If it is, the current element is spliced from the array.
+* If it is not, the index is incremented.
+
+#### <g>Example</g>
+```javascript
+function removeDuplicates(nums: number[]): number {
+    if (nums.length === 0) return 0;
+    if (nums.length === 1) return 1;
+
+      let i = 0;
+    while (i < nums.length) {
+        let j = i + 1;
+        while (j < nums.length) {
+            if (nums[i] === nums[j]) {
+                nums.splice(j, 1); // Remove duplicate element at index j
+            } else {
+                j++;
+            }
+        }
+        i++;
+    }
+    return nums.length;
+}
+```
+
+[Back to Top](#table-of-contents)

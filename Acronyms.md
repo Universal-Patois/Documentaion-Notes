@@ -31,6 +31,9 @@ hh { color: Pink }
 <i>**Application Programming Interface**</i>
 
   - An application programming interface (API) is a set of subroutine definitions, protocols, and tools for building software applications. An API specifies how software components should interact. It can also be understood as a set of clearly defined methods of communication among various components. A good API makes it easier to develop a computer program by providing all the building blocks, which are then put together by the programmer. An API may be for a web-based system, operating system, database system, computer hardware, or software library.
+  - APIs are an intermediary layer between your application code and database. There are a few cases where you might use an API:
+    * If you're using 3rd party services that provide an API.
+    * If you're fetching data from the client, you want to have an API layer that runs on the server to avoid exposing your database secrets to the client.
 
 ## <o>CRUD</o>
 
